@@ -20,10 +20,10 @@ const Gallery = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Safety & Bird Nets Gallery</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
-              { name: 'Balcony Safety Net', image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=500&h=300&fit=crop', badge: 'Safety First', badgeColor: 'bg-blue-600' },
-              { name: 'Kids Net for Balcony', image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=500&h=300&fit=crop', badge: 'Child Safe', badgeColor: 'bg-green-600' },
+              { name: 'Balcony Safety Net', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=300&fit=crop', badge: 'Safety First', badgeColor: 'bg-blue-600' },
+              { name: 'Kids Net for Balcony', image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&h=300&fit=crop', badge: 'Child Safe', badgeColor: 'bg-green-600' },
               { name: 'Pets Safety Nets', image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=500&h=300&fit=crop', badge: 'Pet Friendly', badgeColor: 'bg-purple-600' },
-              { name: 'Grill Balcony Safety Nets', image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500&h=300&fit=crop', badge: 'Secure', badgeColor: 'bg-orange-600' },
+              { name: 'Grill Balcony Safety Nets', image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=500&h=300&fit=crop', badge: 'Secure', badgeColor: 'bg-orange-600' },
               { name: 'Pigeon Nets', image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=300&fit=crop', badge: 'Bird Free', badgeColor: 'bg-red-600' },
               { name: 'Bird Spikes', image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=300&fit=crop', badge: 'Deterrent', badgeColor: 'bg-indigo-600' },
               { name: 'Building Safety Nets', image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=500&h=300&fit=crop', badge: 'Industrial', badgeColor: 'bg-teal-600' },

@@ -60,7 +60,7 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-32 relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=300&h=200&fit=crop" 
+                  src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&h=200&fit=crop" 
                   alt="Children Safety Nets - JARA Safety Nets"
                   className="w-full h-full object-cover"
                 />
@@ -78,7 +78,7 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-32 relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=300&h=200&fit=crop" 
+                  src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=300&h=200&fit=crop" 
                   alt="Duct Area Safety Nets - Bird Protection Solutions"
                   className="w-full h-full object-cover"
                 />
@@ -96,7 +96,7 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-32 relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=300&h=200&fit=crop" 
+                  src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=300&h=200&fit=crop" 
                   alt="All Invisible Grills - Modern Security Solutions"
                   className="w-full h-full object-cover"
                 />
@@ -114,7 +114,7 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-32 relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=300&h=200&fit=crop" 
+                  src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=300&h=200&fit=crop" 
                   alt="Sports Nets Installation - Cricket, Football, Tennis"
                   className="w-full h-full object-cover"
                 />

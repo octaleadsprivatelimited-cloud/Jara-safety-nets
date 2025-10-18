@@ -13,7 +13,7 @@ const Services = () => {
   const serviceImages = [
     {
       title: 'Balcony Safety Nets',
-      image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=250&fit=crop',
+      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=250&fit=crop',
       description: 'Professional balcony safety installation'
     },
     {
@@ -23,7 +23,7 @@ const Services = () => {
     },
     {
       title: 'Sports Nets',
-      image: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&h=250&fit=crop',
+      image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=250&fit=crop',
       description: 'Professional sports facility nets'
     }
   ];
