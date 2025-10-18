@@ -5,39 +5,52 @@ import { Shield, Users, Award, Phone, ArrowRight, Eye, Target, Building, Zap } f
 const Home = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative gradient-primary text-white section-padding">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto container-padding">
-          <div className="text-center py-12">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              Free Installation & Inspection
-            </h1>
-            <div className="text-3xl md:text-4xl font-bold mb-8 text-blue-200">
-              +91 8074616049
-            </div>
-            <p className="text-xl mb-8 text-blue-100 max-w-4xl mx-auto">
-              JARA Safety Nets - Complete Safety & Bird Proofing Solutions by Installation of Nets. 
-              Cost Effective, Customizable. We are Leading Manufacturer and Supplier of Quality Netting with Installation & Warranty.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/contact"
-                className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center justify-center text-lg"
-              >
-                Get Free Quote
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-              <Link
-                to="/services"
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center text-lg"
-              >
-                Our Services
-              </Link>
+        {/* Hero Section */}
+        <section className="relative gradient-primary text-white section-padding">
+          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="relative max-w-7xl mx-auto container-padding">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-12">
+              <div>
+                <h1 className="text-5xl md:text-7xl font-bold mb-6">
+                  Free Installation & Inspection
+                </h1>
+                <div className="text-3xl md:text-4xl font-bold mb-8 text-blue-200">
+                  +91 8074616049
+                </div>
+                <p className="text-xl mb-8 text-blue-100">
+                  JARA Safety Nets - Complete Safety & Bird Proofing Solutions by Installation of Nets. 
+                  Cost Effective, Customizable. We are Leading Manufacturer and Supplier of Quality Netting with Installation & Warranty.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link
+                    to="/contact"
+                    className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center justify-center text-lg"
+                  >
+                    Get Free Quote
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                  <Link
+                    to="/services"
+                    className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center text-lg"
+                  >
+                    Our Services
+                  </Link>
+                </div>
+              </div>
+              <div className="relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop" 
+                  alt="JARA Safety Nets - Professional Safety Net Installation"
+                  className="w-full h-80 object-cover rounded-xl shadow-2xl"
+                />
+                <div className="absolute inset-0 bg-blue-600/20 rounded-xl"></div>
+                <div className="absolute bottom-4 left-4 bg-white/90 text-gray-800 px-3 py-2 rounded-lg">
+                  <p className="text-sm font-semibold">Expert Installation Team</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
 
       {/* Title Cards Section */}
@@ -47,7 +60,7 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-32 relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=200&fit=crop" 
+                  src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&h=200&fit=crop" 
                   alt="Children Safety Nets - JARA Safety Nets"
                   className="w-full h-full object-cover"
                 />
@@ -65,7 +78,7 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-32 relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=300&h=200&fit=crop" 
+                  src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=300&h=200&fit=crop" 
                   alt="Duct Area Safety Nets - Bird Protection Solutions"
                   className="w-full h-full object-cover"
                 />
@@ -83,7 +96,7 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-32 relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=300&h=200&fit=crop" 
+                  src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=300&h=200&fit=crop" 
                   alt="All Invisible Grills - Modern Security Solutions"
                   className="w-full h-full object-cover"
                 />

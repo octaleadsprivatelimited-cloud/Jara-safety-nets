@@ -6,13 +6,38 @@ const About = () => {
     <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            About JARA Safety Nets
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Owned by Philip Raju (Prop.) - Your trusted partner in safety solutions
-          </p>
+        <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-8 md:p-12 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                About JARA Safety Nets
+              </h1>
+              <p className="text-xl text-blue-100 mb-8">
+                Owned by Philip Raju (Prop.) - Your trusted partner in safety solutions
+              </p>
+              <div className="grid grid-cols-2 gap-6">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
+                  <h3 className="text-2xl font-bold mb-2">12+</h3>
+                  <p className="text-blue-100">Years Experience</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
+                  <h3 className="text-2xl font-bold mb-2">500+</h3>
+                  <p className="text-blue-100">Projects Completed</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <img 
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=400&fit=crop" 
+                alt="JARA Safety Nets - Professional Installation Team"
+                className="w-full h-80 object-cover rounded-xl shadow-2xl"
+              />
+              <div className="absolute inset-0 bg-blue-600/20 rounded-xl"></div>
+              <div className="absolute bottom-4 left-4 bg-white/90 text-gray-800 px-3 py-2 rounded-lg">
+                <p className="text-sm font-semibold">Expert Installation Team</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Company Overview */}

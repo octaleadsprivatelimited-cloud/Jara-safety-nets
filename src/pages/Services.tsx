@@ -10,6 +10,24 @@ interface Service {
 }
 
 const Services = () => {
+  const serviceImages = [
+    {
+      title: 'Balcony Safety Nets',
+      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=250&fit=crop',
+      description: 'Professional balcony safety installation'
+    },
+    {
+      title: 'Bird Protection Nets', 
+      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=250&fit=crop',
+      description: 'Effective bird prevention solutions'
+    },
+    {
+      title: 'Sports Nets',
+      image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=250&fit=crop',
+      description: 'Professional sports facility nets'
+    }
+  ];
+
   const getColorClasses = (color: string) => {
     const colorMap = {
       blue: 'bg-blue-100 text-blue-600',
@@ -132,13 +150,29 @@ const Services = () => {
     <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our Services
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive safety net solutions for all your protection needs
-          </p>
+        <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-8 md:p-12 mb-12">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              Our Services
+            </h1>
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+              Professional safety net solutions for all your needs. From balcony safety to bird protection, 
+              we provide comprehensive netting services with expert installation.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {serviceImages.map((service, index) => (
+              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <img 
+                  src={service.image} 
+                  alt={service.description}
+                  className="w-full h-32 object-cover rounded-lg mb-4"
+                />
+                <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
+                <p className="text-blue-100 text-sm">{service.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Service Categories */}
