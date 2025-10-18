@@ -28,7 +28,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=400&fit=crop" 
+                src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=500&h=400&fit=crop" 
                 alt="JARA Safety Nets - Professional Installation Team"
                 className="w-full h-80 object-cover rounded-xl shadow-2xl"
               />
