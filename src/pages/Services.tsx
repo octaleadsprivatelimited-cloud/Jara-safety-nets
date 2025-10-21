@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, Phone, CheckCircle, Home, Bird, Baby, Target, Eye, Building, Shirt, Bug, Sun, TreePine, LucideIcon } from 'lucide-react';
+import ScrollAnimation from '../components/ScrollAnimation';
 
 interface Service {
   icon: LucideIcon;
@@ -166,7 +167,8 @@ const Services = () => {
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
           <div className="relative">
-            <div className="text-center mb-12 animate-fade-in-up">
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <div className="text-center mb-12">
               <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
                 <CheckCircle className="w-5 h-5 mr-2" />
                 <span className="text-sm font-medium">Professional Installation</span>
@@ -178,10 +180,12 @@ const Services = () => {
                 Professional safety net solutions for all your needs. From balcony safety to bird protection, 
                 we provide comprehensive netting services with expert installation.
               </p>
-            </div>
+              </div>
+            </ScrollAnimation>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {serviceImages.map((service, index) => (
-                <div key={index} className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+                <ScrollAnimation key={index} animation="fadeInUp" delay={300 + index * 200}>
+                  <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
                   <div className="relative overflow-hidden rounded-xl mb-4">
                     <img 
                       src={service.image} 
@@ -195,7 +199,8 @@ const Services = () => {
                   </div>
                   <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-200 transition-colors">{service.title}</h3>
                   <p className="text-blue-100 text-sm">{service.description}</p>
-                </div>
+                  </div>
+                </ScrollAnimation>
               ))}
             </div>
           </div>

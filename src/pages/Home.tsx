@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Users, Award, Phone, ArrowRight, Eye, Target, Building, Zap } from 'lucide-react';
+import ScrollAnimation from '../components/ScrollAnimation';
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
           </div>
           <div className="relative max-w-7xl mx-auto container-padding">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-12">
-              <div className="animate-fade-in-up">
+              <ScrollAnimation animation="fadeInUp" delay={200}>
                 <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
                   <Shield className="w-5 h-5 mr-2" />
                   <span className="text-sm font-medium">Trusted by 500+ Families</span>
@@ -56,8 +57,9 @@ const Home = () => {
                     <span className="text-sm">500+ Projects</span>
                   </div>
                 </div>
-              </div>
-              <div className="relative animate-fade-in-right">
+              </ScrollAnimation>
+              <ScrollAnimation animation="fadeInRight" delay={400}>
+                <div className="relative">
                 <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400/20 rounded-full blur-xl"></div>
                 <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-400/20 rounded-full blur-xl"></div>
                 <img 
@@ -69,10 +71,11 @@ const Home = () => {
                 <div className="absolute bottom-4 left-4 bg-white/90 text-gray-800 px-3 py-2 rounded-lg backdrop-blur-sm">
                   <p className="text-sm font-semibold">Expert Installation Team</p>
                 </div>
-                <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold animate-pulse">
-                  Free Installation
+                  <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold animate-pulse">
+                    Free Installation
+                  </div>
                 </div>
-              </div>
+              </ScrollAnimation>
             </div>
           </div>
         </section>
@@ -82,12 +85,15 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Premium Services</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Professional safety solutions tailored to your specific needs</p>
-          </div>
+          <ScrollAnimation animation="fadeInUp" delay={200}>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Premium Services</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">Professional safety solutions tailored to your specific needs</p>
+            </div>
+          </ScrollAnimation>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+            <ScrollAnimation animation="fadeInUp" delay={300}>
+              <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
               <div className="h-40 relative overflow-hidden">
                 <img 
                   src="/images/Children Safety Nets.avif" 
@@ -109,9 +115,11 @@ const Home = () => {
                   <div className="bg-blue-600 h-1 rounded-full w-4/5"></div>
                 </div>
               </div>
-            </div>
+              </div>
+            </ScrollAnimation>
             
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+            <ScrollAnimation animation="fadeInUp" delay={400}>
+              <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
               <div className="h-40 relative overflow-hidden">
                 <img 
                   src="/images/Duct Area Safety Nets.avif" 
@@ -133,9 +141,11 @@ const Home = () => {
                   <div className="bg-green-600 h-1 rounded-full w-3/4"></div>
                 </div>
               </div>
-            </div>
+              </div>
+            </ScrollAnimation>
             
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+            <ScrollAnimation animation="fadeInUp" delay={500}>
+              <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
               <div className="h-40 relative overflow-hidden">
                 <img 
                   src="/images/All Invisible Grills.webp" 
@@ -157,9 +167,11 @@ const Home = () => {
                   <div className="bg-purple-600 h-1 rounded-full w-5/6"></div>
                 </div>
               </div>
-            </div>
+              </div>
+            </ScrollAnimation>
             
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+            <ScrollAnimation animation="fadeInUp" delay={600}>
+              <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
               <div className="h-40 relative overflow-hidden">
                 <img 
                   src="/images/Sports Nets Installation.avif" 
@@ -181,7 +193,8 @@ const Home = () => {
                   <div className="bg-orange-600 h-1 rounded-full w-4/5"></div>
                 </div>
               </div>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
