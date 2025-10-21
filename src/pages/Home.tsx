@@ -39,11 +39,7 @@ const Home = () => {
               </div>
               <div className="relative">
                 <img 
-<<<<<<< HEAD
                   src="/images/Hero Home.webp" 
-=======
-                  src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&h=400&fit=crop" 
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
                   alt="JARA Safety Nets - Professional Safety Net Installation"
                   className="w-full h-80 object-cover rounded-xl shadow-2xl"
                 />
@@ -64,11 +60,11 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-32 relative">
                 <img 
-<<<<<<< HEAD
+
                   src="/images/Children Safety Nets.avif" 
-=======
+
                   src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&h=200&fit=crop" 
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
+
                   alt="Children Safety Nets - JARA Safety Nets"
                   className="w-full h-full object-cover"
                 />
@@ -86,11 +82,11 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-32 relative">
                 <img 
-<<<<<<< HEAD
+
                   src="/images/Duct Area Safety Nets.avif" 
-=======
+
                   src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=300&h=200&fit=crop" 
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
+
                   alt="Duct Area Safety Nets - Bird Protection Solutions"
                   className="w-full h-full object-cover"
                 />
@@ -108,11 +104,11 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-32 relative">
                 <img 
-<<<<<<< HEAD
+
                   src="/images/All Invisible Grills.webp" 
-=======
+
                   src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=300&h=200&fit=crop" 
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
+
                   alt="All Invisible Grills - Modern Security Solutions"
                   className="w-full h-full object-cover"
                 />
@@ -130,11 +126,11 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-32 relative">
                 <img 
-<<<<<<< HEAD
+
                   src="/images/Sports Nets Installation.avif" 
-=======
+
                   src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=300&h=200&fit=crop" 
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
+
                   alt="Sports Nets Installation - Cricket, Football, Tennis"
                   className="w-full h-full object-cover"
                 />
@@ -267,11 +263,11 @@ const Home = () => {
             </div>
             <div className="relative">
               <img 
-<<<<<<< HEAD
+
                 src="/images/We Are The Best Choice For You Safety Nets Services.avif" 
-=======
+
                 src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop" 
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
+
                 alt="Safety Nets Installation"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
                 loading="lazy"
@@ -387,11 +383,11 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-48 relative">
                 <img 
-<<<<<<< HEAD
+
                   src="/images/Blog 1.webp" 
-=======
+
                   src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=300&fit=crop" 
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
+
                   alt="Balcony Safety Nets"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -417,11 +413,11 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-48 relative">
                 <img 
-<<<<<<< HEAD
+
                   src="/images/Blog 2.avif" 
-=======
+
                   src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=300&fit=crop" 
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
+
                   alt="Pigeon Prevention Nets"
                   className="w-full h-full object-cover"
                   loading="lazy"

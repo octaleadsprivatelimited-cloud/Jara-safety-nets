@@ -13,29 +13,29 @@ const Services = () => {
   const serviceImages = [
     {
       title: 'Balcony Safety Nets',
-<<<<<<< HEAD
+
       image: '/images/Balcony Safety Nets.webp',
-=======
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=250&fit=crop',
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
+
+      image: ,
+
       description: 'Professional balcony safety installation'
     },
     {
       title: 'Bird Protection Nets', 
-<<<<<<< HEAD
+
       image: '/images/Bird Protection Nets.webp',
-=======
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=250&fit=crop',
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
+
+      image: ,
+
       description: 'Effective bird prevention solutions'
     },
     {
       title: 'Sports Nets',
-<<<<<<< HEAD
+
       image: '/images/Sports Nets.webp',
-=======
-      image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=250&fit=crop',
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
+
+      image: ,
+
       description: 'Professional sports facility nets'
     }
   ];
@@ -385,7 +385,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => {
               const serviceImages = [
-<<<<<<< HEAD
+
                 '/images/Balcony Safety Nets.webp', // Balcony Safety Nets
                 '/images/Bird Protection Nets.webp', // Bird Protection Nets
                 '/images/Children Safety Nets.avif', // Children Safety Nets
@@ -401,23 +401,19 @@ const Services = () => {
                 '/images/Deck Area Safety Nets.webp', // Deck Area Safety Nets
                 '/images/Building Covering.avif', // Building Covering
                 '/images/Green Grass Installation.avif'  // Green Grass Installation
-=======
-                'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=300&fit=crop', // Balcony Safety Nets
-                'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=300&fit=crop', // Bird Protection Nets
-                'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&h=300&fit=crop', // Children Safety Nets
-                'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=500&h=300&fit=crop', // Cricket Practice Nets
-                'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=500&h=300&fit=crop', // All Sports Nets
-                'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500&h=300&fit=crop', // Invisible Grills
-                'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=300&fit=crop', // Coconut Safety Nets
-                'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=500&h=300&fit=crop', // Building Safety Nets
-                'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=500&h=300&fit=crop', // Cloth Hangers
-                'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=300&fit=crop', // Bird Spikes
-                'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=500&h=300&fit=crop', // Mosquito Nets
-                'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&h=300&fit=crop', // Shade Nets
-                'https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500&h=300&fit=crop', // Deck Area Safety Nets
-                'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&h=300&fit=crop', // Building Covering
-                'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&h=300&fit=crop'  // Green Grass Installation
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
+                , // Cricket Practice Nets
+                , // All Sports Nets
+                , // Invisible Grills
+                , // Coconut Safety Nets
+                , // Building Safety Nets
+                , // Cloth Hangers
+                , // Bird Spikes
+                , // Mosquito Nets
+                , // Shade Nets
+                , // Deck Area Safety Nets
+                , // Building Covering
+                
+
               ];
               
               return (

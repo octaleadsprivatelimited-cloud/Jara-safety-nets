@@ -96,11 +96,11 @@ const InvisibleGrillsService = () => {
             </div>
             <div className="relative">
               <img 
-<<<<<<< HEAD
+
                 src="/images/All Invisible Grills.webp" 
-=======
+
                 src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop" 
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
+
                 alt="Invisible Grills"
                 className="w-full h-80 object-cover rounded-xl shadow-2xl"
               />

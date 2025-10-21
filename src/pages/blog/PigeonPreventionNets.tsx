@@ -21,11 +21,11 @@ const PigeonPreventionNets = () => {
         <article className="bg-white rounded-xl shadow-professional-lg overflow-hidden">
           <div className="h-64 md:h-80 relative">
             <img 
-<<<<<<< HEAD
+
               src="/images/Blog 2.avif" 
-=======
+
               src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=400&fit=crop" 
->>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
+
               alt="Pigeon Prevention Nets"
               className="w-full h-full object-cover"
             />
