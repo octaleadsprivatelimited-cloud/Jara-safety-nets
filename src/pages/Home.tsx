@@ -270,77 +270,77 @@ const Home = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <ScrollAnimation animation="fadeInUp" delay={300}>
-              <AnimatedCard variant="magnetic" intensity="medium" className="text-center p-6 bg-blue-50 rounded-lg hover:shadow-lg">
-                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
+              <div className="text-center p-6 bg-blue-50 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                   <Shield className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-900">Balcony Nets</h3>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fadeInUp" delay={400}>
-              <AnimatedCard variant="tilt" intensity="medium" className="text-center p-6 bg-green-50 rounded-lg hover:shadow-lg">
-                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-rotate3d">
+              <div className="text-center p-6 bg-green-50 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                   <Eye className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-900">Grills for Windows</h3>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fadeInUp" delay={500}>
-              <AnimatedCard variant="glow" intensity="medium" className="text-center p-6 bg-purple-50 rounded-lg hover:shadow-lg">
-                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-morphing">
+              <div className="text-center p-6 bg-purple-50 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                   <Eye className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-900">Casement Invisible Grills</h3>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fadeInUp" delay={600}>
-              <AnimatedCard variant="flip" intensity="medium" className="text-center p-6 bg-orange-50 rounded-lg hover:shadow-lg">
-                <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-wave">
+              <div className="text-center p-6 bg-orange-50 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                   <Target className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-900">Cricket Nets</h3>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
             <ScrollAnimation animation="fadeInUp" delay={700}>
-              <AnimatedCard variant="magnetic" intensity="medium" className="text-center p-6 bg-indigo-50 rounded-lg hover:shadow-lg">
-                <div className="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-particle-float">
+              <div className="text-center p-6 bg-indigo-50 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                   <Eye className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-900">Balcony Invisible Grills</h3>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fadeInUp" delay={800}>
-              <AnimatedCard variant="tilt" intensity="medium" className="text-center p-6 bg-red-50 rounded-lg hover:shadow-lg">
-                <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
+              <div className="text-center p-6 bg-red-50 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                   <Building className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-900">Industrial Safety Nets</h3>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fadeInUp" delay={900}>
-              <AnimatedCard variant="glow" intensity="medium" className="text-center p-6 bg-yellow-50 rounded-lg hover:shadow-lg">
-                <div className="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-rotate3d">
+              <div className="text-center p-6 bg-yellow-50 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                   <Zap className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-900">Bird Spikes</h3>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fadeInUp" delay={1000}>
-              <AnimatedCard variant="flip" intensity="medium" className="text-center p-6 bg-teal-50 rounded-lg hover:shadow-lg">
-                <div className="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-morphing">
+              <div className="text-center p-6 bg-teal-50 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                   <Building className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-900">Building Nets</h3>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
           </div>
         </div>
@@ -376,19 +376,17 @@ const Home = () => {
             </ScrollAnimation>
             <ScrollAnimation animation="fadeInRight" delay={400}>
               <div className="relative">
-                <ParallaxElement speed={0.2} direction="up">
-                  <img 
-                    src="/images/We Are The Best Choice For You Safety Nets Services.avif" 
-                    alt="Safety Nets Installation"
-                    className="w-full h-96 object-cover rounded-2xl shadow-2xl hover-3d-lift"
-                    loading="lazy"
-                  />
-                </ParallaxElement>
-                <div className="absolute inset-0 bg-blue-600/20 rounded-2xl animate-gradient-shift"></div>
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 animate-pulse-glow">
+                <img 
+                  src="/images/We Are The Best Choice For You Safety Nets Services.avif" 
+                  alt="Safety Nets Installation"
+                  className="w-full h-96 object-cover rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-blue-600/20 rounded-2xl"></div>
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2">
                   <p className="text-sm font-semibold text-gray-800">Expert Installation</p>
                 </div>
-                <div className="absolute bottom-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold animate-bounce">
+                <div className="absolute bottom-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
                   Quality Assured
                 </div>
               </div>
@@ -415,43 +413,43 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             <ScrollAnimation animation="fadeInUp" delay={300}>
-              <AnimatedCard variant="magnetic" intensity="high" className="text-center p-6 bg-blue-50 rounded-lg hover:shadow-lg">
-                <h3 className="text-2xl font-bold text-blue-600 mb-2 animate-text-reveal">Children Safety Nets</h3>
-                <p className="text-gray-600 mb-4 animate-fade-in-up">+91 8074616049</p>
+              <div className="text-center p-6 bg-blue-50 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <h3 className="text-2xl font-bold text-blue-600 mb-2">Children Safety Nets</h3>
+                <p className="text-gray-600 mb-4">+91 8074616049</p>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-blue-600 h-2 rounded-full w-4/5 animate-gradient-shift"></div>
+                  <div className="bg-blue-600 h-2 rounded-full w-4/5"></div>
                 </div>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fadeInUp" delay={400}>
-              <AnimatedCard variant="tilt" intensity="high" className="text-center p-6 bg-green-50 rounded-lg hover:shadow-lg">
-                <h3 className="text-2xl font-bold text-green-600 mb-2 animate-text-reveal">Duct Area Safety Nets</h3>
-                <p className="text-gray-600 mb-4 animate-fade-in-up">+91 8074616049</p>
+              <div className="text-center p-6 bg-green-50 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <h3 className="text-2xl font-bold text-green-600 mb-2">Duct Area Safety Nets</h3>
+                <p className="text-gray-600 mb-4">+91 8074616049</p>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-green-600 h-2 rounded-full w-3/4 animate-gradient-shift"></div>
+                  <div className="bg-green-600 h-2 rounded-full w-3/4"></div>
                 </div>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fadeInUp" delay={500}>
-              <AnimatedCard variant="glow" intensity="high" className="text-center p-6 bg-purple-50 rounded-lg hover:shadow-lg">
-                <h3 className="text-2xl font-bold text-purple-600 mb-2 animate-text-reveal">All Invisible Grills</h3>
-                <p className="text-gray-600 mb-4 animate-fade-in-up">+91 8074616049</p>
+              <div className="text-center p-6 bg-purple-50 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <h3 className="text-2xl font-bold text-purple-600 mb-2">All Invisible Grills</h3>
+                <p className="text-gray-600 mb-4">+91 8074616049</p>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-purple-600 h-2 rounded-full w-5/6 animate-gradient-shift"></div>
+                  <div className="bg-purple-600 h-2 rounded-full w-5/6"></div>
                 </div>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fadeInUp" delay={600}>
-              <AnimatedCard variant="flip" intensity="high" className="text-center p-6 bg-orange-50 rounded-lg hover:shadow-lg">
-                <h3 className="text-2xl font-bold text-orange-600 mb-2 animate-text-reveal">Sports Nets Installation</h3>
-                <p className="text-gray-600 mb-4 animate-fade-in-up">+91 8074616049</p>
+              <div className="text-center p-6 bg-orange-50 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <h3 className="text-2xl font-bold text-orange-600 mb-2">Sports Nets Installation</h3>
+                <p className="text-gray-600 mb-4">+91 8074616049</p>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-orange-600 h-2 rounded-full w-4/5 animate-gradient-shift"></div>
+                  <div className="bg-orange-600 h-2 rounded-full w-4/5"></div>
                 </div>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
           </div>
         </div>
@@ -476,51 +474,51 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ScrollAnimation animation="fadeInUp" delay={300}>
-              <AnimatedCard variant="magnetic" intensity="high" className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
+              <div className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                   <Award className="w-8 h-8 text-blue-600" />
                 </div>
-                <h3 className="text-lg font-semibold mb-3 animate-text-reveal">12+ Years Experience</h3>
-                <p className="text-gray-600 text-sm animate-fade-in-up">
+                <h3 className="text-lg font-semibold mb-3">12+ Years Experience</h3>
+                <p className="text-gray-600 text-sm">
                   We are having 12+ Years of Experience in Installing All types of Safety Nets
                 </p>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
 
             <ScrollAnimation animation="fadeInUp" delay={400}>
-              <AnimatedCard variant="tilt" intensity="high" className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 animate-rotate3d">
+              <div className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                   <Users className="w-8 h-8 text-green-600" />
                 </div>
-                <h3 className="text-lg font-semibold mb-3 animate-text-reveal">Trained Team</h3>
-                <p className="text-gray-600 text-sm animate-fade-in-up">
+                <h3 className="text-lg font-semibold mb-3">Trained Team</h3>
+                <p className="text-gray-600 text-sm">
                   Our Team was trained in fixing and installation of nets in Apartments, Industries and all sports nets
                 </p>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
 
             <ScrollAnimation animation="fadeInUp" delay={500}>
-              <AnimatedCard variant="glow" intensity="high" className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 animate-morphing">
+              <div className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                   <Shield className="w-8 h-8 text-purple-600" />
                 </div>
-                <h3 className="text-lg font-semibold mb-3 animate-text-reveal">Safety Norms</h3>
-                <p className="text-gray-600 text-sm animate-fade-in-up">
+                <h3 className="text-lg font-semibold mb-3">Safety Norms</h3>
+                <p className="text-gray-600 text-sm">
                   We Install Nets by Following all Safety Norms by wearing Safety Rope along with All Required Safety Equipments
                 </p>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
 
             <ScrollAnimation animation="fadeInUp" delay={600}>
-              <AnimatedCard variant="flip" intensity="high" className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg">
-                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 animate-wave">
+              <div className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                   <Award className="w-8 h-8 text-orange-600" />
                 </div>
-                <h3 className="text-lg font-semibold mb-3 animate-text-reveal">Expert Service</h3>
-                <p className="text-gray-600 text-sm animate-fade-in-up">
+                <h3 className="text-lg font-semibold mb-3">Expert Service</h3>
+                <p className="text-gray-600 text-sm">
                   Expert fixing safety nets, we have served almost all major residential & commercial requirements
                 </p>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
           </div>
         </div>
@@ -544,63 +542,59 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <ScrollAnimation animation="fadeInUp" delay={300}>
-              <AnimatedCard variant="magnetic" intensity="high" className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg">
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
                 <div className="h-48 relative">
-                  <ParallaxElement speed={0.1} direction="up">
-                    <img 
-                      src="/images/Blog 1.webp" 
-                      alt="Balcony Safety Nets"
-                      className="w-full h-full object-cover hover-3d-lift"
-                      loading="lazy"
-                    />
-                  </ParallaxElement>
-                  <div className="absolute inset-0 bg-black bg-opacity-30 animate-gradient-shift"></div>
+                  <img 
+                    src="/images/Blog 1.webp" 
+                    alt="Balcony Safety Nets"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-30"></div>
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse-glow">Balcony Nets</span>
+                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Balcony Nets</span>
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900 animate-text-reveal">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900">
                     "Ensuring Peace of Mind: The Importance of Balcony Nets"
                   </h3>
-                  <p className="text-gray-600 mb-4 animate-fade-in-up">
+                  <p className="text-gray-600 mb-4">
                     <strong>Balcony Nets:</strong> A Crucial Element for Peaceful Living. In today's fast-paced world, ensuring the protection of our loved ones is of utmost importance. One area that often goes overlooked is balcony safety...
                   </p>
-                  <Link to="/blog/balcony-safety-nets" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors hover-text-reveal">
+                  <Link to="/blog/balcony-safety-nets" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
                     Read More →
                   </Link>
                 </div>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
 
             <ScrollAnimation animation="fadeInUp" delay={400}>
-              <AnimatedCard variant="tilt" intensity="high" className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg">
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2">
                 <div className="h-48 relative">
-                  <ParallaxElement speed={0.1} direction="up">
-                    <img 
-                      src="/images/Blog 2.avif" 
-                      alt="Pigeon Prevention Nets"
-                      className="w-full h-full object-cover hover-3d-lift"
-                      loading="lazy"
-                    />
-                  </ParallaxElement>
-                  <div className="absolute inset-0 bg-black bg-opacity-30 animate-gradient-shift"></div>
+                  <img 
+                    src="/images/Blog 2.avif" 
+                    alt="Pigeon Prevention Nets"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-30"></div>
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse-glow">Pigeon Nets</span>
+                    <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Pigeon Nets</span>
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900 animate-text-reveal">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900">
                     "Protecting Your Property: The Importance of Pigeon Prevention Nets"
                   </h3>
-                  <p className="text-gray-600 mb-4 animate-fade-in-up">
+                  <p className="text-gray-600 mb-4">
                     <strong>Safeguard Your Assets:</strong> The Significance of Pigeon Prevention Nets. Protecting your property is of utmost importance. Pigeon nets play a crucial role in ensuring the security and well-being of your property...
                   </p>
-                  <Link to="/blog/pigeon-prevention-nets" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors hover-text-reveal">
+                  <Link to="/blog/pigeon-prevention-nets" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
                     Read More →
                   </Link>
                 </div>
-              </AnimatedCard>
+              </div>
             </ScrollAnimation>
           </div>
         </div>
