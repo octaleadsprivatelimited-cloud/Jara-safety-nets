@@ -13,29 +13,17 @@ const Services = () => {
   const serviceImages = [
     {
       title: 'Balcony Safety Nets',
-
       image: '/images/Balcony Safety Nets.webp',
-
-      image: ,
-
       description: 'Professional balcony safety installation'
     },
     {
       title: 'Bird Protection Nets', 
-
       image: '/images/Bird Protection Nets.webp',
-
-      image: ,
-
       description: 'Effective bird prevention solutions'
     },
     {
       title: 'Sports Nets',
-
       image: '/images/Sports Nets.webp',
-
-      image: ,
-
       description: 'Professional sports facility nets'
     }
   ];
@@ -385,7 +373,6 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => {
               const serviceImages = [
-
                 '/images/Balcony Safety Nets.webp', // Balcony Safety Nets
                 '/images/Bird Protection Nets.webp', // Bird Protection Nets
                 '/images/Children Safety Nets.avif', // Children Safety Nets
@@ -401,19 +388,6 @@ const Services = () => {
                 '/images/Deck Area Safety Nets.webp', // Deck Area Safety Nets
                 '/images/Building Covering.avif', // Building Covering
                 '/images/Green Grass Installation.avif'  // Green Grass Installation
-                , // Cricket Practice Nets
-                , // All Sports Nets
-                , // Invisible Grills
-                , // Coconut Safety Nets
-                , // Building Safety Nets
-                , // Cloth Hangers
-                , // Bird Spikes
-                , // Mosquito Nets
-                , // Shade Nets
-                , // Deck Area Safety Nets
-                , // Building Covering
-                
-
               ];
               
               return (
