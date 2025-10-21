@@ -1,6 +1,10 @@
 import React from 'react';
 import { Users, Phone, CheckCircle, Home, Bird, Baby, Target, Eye, Building, Shirt, Bug, Sun, TreePine, LucideIcon } from 'lucide-react';
 import ScrollAnimation from '../components/ScrollAnimation';
+import ParallaxElement from '../components/ParallaxElement';
+import FloatingElements from '../components/FloatingElements';
+import CreativeButton from '../components/CreativeButton';
+import AnimatedCard from '../components/AnimatedCard';
 
 interface Service {
   icon: LucideIcon;
@@ -162,10 +166,16 @@ const Services = () => {
     <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white rounded-3xl p-8 md:p-12 mb-16 relative overflow-hidden">
+        <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white rounded-3xl p-8 md:p-12 mb-16 relative overflow-hidden animate-gradient-shift">
           <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent"></div>
-          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
+          <div className="absolute inset-0 bg-mesh opacity-20"></div>
+          <FloatingElements count={6} colors={['#ffffff', '#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6']} size="small" />
+          <ParallaxElement speed={0.3} direction="up">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32 animate-liquid-morph"></div>
+          </ParallaxElement>
+          <ParallaxElement speed={0.4} direction="down">
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24 animate-morphing"></div>
+          </ParallaxElement>
           <div className="relative">
             <ScrollAnimation animation="fadeInUp" delay={200}>
               <div className="text-center mb-12">
@@ -185,7 +195,11 @@ const Services = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {serviceImages.map((service, index) => (
                 <ScrollAnimation key={index} animation="fadeInUp" delay={300 + index * 200}>
-                  <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+                  <AnimatedCard 
+                    variant={index % 2 === 0 ? 'magnetic' : 'glow'} 
+                    intensity="high" 
+                    className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20"
+                  >
                   <div className="relative overflow-hidden rounded-xl mb-4">
                     <img 
                       src={service.image} 
@@ -199,7 +213,7 @@ const Services = () => {
                   </div>
                   <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-200 transition-colors">{service.title}</h3>
                   <p className="text-blue-100 text-sm">{service.description}</p>
-                  </div>
+                  </AnimatedCard>
                 </ScrollAnimation>
               ))}
             </div>

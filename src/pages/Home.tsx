@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Users, Award, Phone, ArrowRight, Eye, Target, Building, Zap } from 'lucide-react';
 import ScrollAnimation from '../components/ScrollAnimation';
+import ParallaxElement from '../components/ParallaxElement';
+import FloatingElements from '../components/FloatingElements';
+import CreativeButton from '../components/CreativeButton';
+import AnimatedCard from '../components/AnimatedCard';
 
 const Home = () => {
   return (
@@ -10,10 +14,24 @@ const Home = () => {
         <section className="relative gradient-primary text-white section-padding overflow-hidden">
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 to-blue-800/30"></div>
+          <div className="absolute inset-0 bg-mesh opacity-30"></div>
+          <FloatingElements count={8} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4', '#84cc16', '#f97316']} size="medium" />
           <div className="absolute top-0 left-0 w-full h-full">
-            <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full animate-pulse"></div>
-            <div className="absolute top-40 right-20 w-16 h-16 bg-white/5 rounded-full animate-bounce"></div>
-            <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-white/10 rounded-full animate-pulse"></div>
+            <ParallaxElement speed={0.3} direction="up">
+              <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full animate-pulse-glow"></div>
+            </ParallaxElement>
+            <ParallaxElement speed={0.5} direction="down">
+              <div className="absolute top-40 right-20 w-16 h-16 bg-white/5 rounded-full animate-wave"></div>
+            </ParallaxElement>
+            <ParallaxElement speed={0.4} direction="up">
+              <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-white/10 rounded-full animate-morphing"></div>
+            </ParallaxElement>
+            <ParallaxElement speed={0.6} direction="left">
+              <div className="absolute top-1/2 right-10 w-8 h-8 bg-yellow-400/20 rounded-full animate-particle-float"></div>
+            </ParallaxElement>
+            <ParallaxElement speed={0.2} direction="right">
+              <div className="absolute bottom-1/3 right-1/3 w-6 h-6 bg-green-400/20 rounded-full animate-rotate3d"></div>
+            </ParallaxElement>
           </div>
           <div className="relative max-w-7xl mx-auto container-padding">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-12">
@@ -22,10 +40,10 @@ const Home = () => {
                   <Shield className="w-5 h-5 mr-2" />
                   <span className="text-sm font-medium">Trusted by 500+ Families</span>
                 </div>
-                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-gradient animate-text-reveal">
                   Free Installation & Inspection
                 </h1>
-                <div className="text-3xl md:text-4xl font-bold mb-8 text-blue-200 bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 inline-block">
+                <div className="text-3xl md:text-4xl font-bold mb-8 text-blue-200 bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 inline-block animate-pulse-glow hover-glow-intense">
                   +91 8074616049
                 </div>
                 <p className="text-xl mb-8 text-blue-100 leading-relaxed">
@@ -33,19 +51,23 @@ const Home = () => {
                   Cost Effective, Customizable. We are Leading Manufacturer and Supplier of Quality Netting with Installation & Warranty.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link
-                    to="/contact"
-                    className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 inline-flex items-center justify-center text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  <CreativeButton
+                    variant="gradient"
+                    size="lg"
+                    className="inline-flex items-center justify-center"
+                    onClick={() => window.location.href = '/contact'}
                   >
                     Get Free Quote
                     <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
-                  <Link
-                    to="/services"
-                    className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 inline-flex items-center justify-center text-lg backdrop-blur-sm hover:shadow-xl transform hover:-translate-y-1"
+                  </CreativeButton>
+                  <CreativeButton
+                    variant="glow"
+                    size="lg"
+                    className="inline-flex items-center justify-center"
+                    onClick={() => window.location.href = '/services'}
                   >
                     Our Services
-                  </Link>
+                  </CreativeButton>
                 </div>
                 <div className="mt-8 flex items-center space-x-6">
                   <div className="flex items-center">
@@ -93,7 +115,7 @@ const Home = () => {
           </ScrollAnimation>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <ScrollAnimation animation="fadeInUp" delay={300}>
-              <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+              <AnimatedCard variant="magnetic" intensity="high" className="group bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
               <div className="h-40 relative overflow-hidden">
                 <img 
                   src="/images/Children Safety Nets.avif" 
@@ -115,11 +137,11 @@ const Home = () => {
                   <div className="bg-blue-600 h-1 rounded-full w-4/5"></div>
                 </div>
               </div>
-              </div>
+              </AnimatedCard>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fadeInUp" delay={400}>
-              <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+              <AnimatedCard variant="tilt" intensity="medium" className="group bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
               <div className="h-40 relative overflow-hidden">
                 <img 
                   src="/images/Duct Area Safety Nets.avif" 
@@ -141,11 +163,11 @@ const Home = () => {
                   <div className="bg-green-600 h-1 rounded-full w-3/4"></div>
                 </div>
               </div>
-              </div>
+              </AnimatedCard>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fadeInUp" delay={500}>
-              <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+              <AnimatedCard variant="glow" intensity="high" className="group bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
               <div className="h-40 relative overflow-hidden">
                 <img 
                   src="/images/All Invisible Grills.webp" 
@@ -167,11 +189,11 @@ const Home = () => {
                   <div className="bg-purple-600 h-1 rounded-full w-5/6"></div>
                 </div>
               </div>
-              </div>
+              </AnimatedCard>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fadeInUp" delay={600}>
-              <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+              <AnimatedCard variant="flip" intensity="medium" className="group bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
               <div className="h-40 relative overflow-hidden">
                 <img 
                   src="/images/Sports Nets Installation.avif" 
@@ -193,7 +215,7 @@ const Home = () => {
                   <div className="bg-orange-600 h-1 rounded-full w-4/5"></div>
                 </div>
               </div>
-              </div>
+              </AnimatedCard>
             </ScrollAnimation>
           </div>
         </div>
