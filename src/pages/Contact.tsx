@@ -459,15 +459,18 @@ const Contact = () => {
                       </div>
                     </ScrollAnimation>
                     <ScrollAnimation animation="fadeInUp" delay={400}>
-                      <div className="h-64 bg-gradient-to-br from-gray-100 to-blue-100 rounded-xl flex items-center justify-center relative overflow-hidden group-hover:shadow-lg transition-all duration-500">
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-200/20 to-green-200/20"></div>
-                        <div className="text-center">
-                          <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 animate-rotate3d">
-                            <MapPin className="w-8 h-8 text-blue-600" />
-                          </div>
-                          <p className="text-gray-600 font-semibold animate-text-reveal">Google Maps Integration</p>
-                          <p className="text-gray-500 text-sm mt-2 animate-fade-in-up">Green Park Colony, Road No.9, Karmanghat, Hyderabad</p>
-                        </div>
+                      <div className="h-64 rounded-xl overflow-hidden group-hover:shadow-lg transition-all duration-500">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.286773901721!2d78.52334507368829!3d17.349928403886118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9888b6bb1ad1%3A0xc5c8b2ee3e9294a8!2s9%2C%20B-9%2C%20Green%20Park%20Colony%20Main%20Rd%2C%20Saroornagar%2C%20Green%20Park%20Colony%2C%20Saroor%20Nagar%20East%2C%20Hyderabad%2C%20Telangana%20500035!5e0!3m2!1sen!2sin!4v1761034465612!5m2!1sen!2sin"
+                          width="100%"
+                          height="100%"
+                          style={{ border: 0 }}
+                          allowFullScreen
+                          loading="lazy"
+                          referrerPolicy="no-referrer-when-downgrade"
+                          title="JARA Safety Nets Location - Green Park Colony, Road No.9, Karmanghat, Hyderabad"
+                          className="rounded-xl"
+                        ></iframe>
                       </div>
                     </ScrollAnimation>
                   </div>
