@@ -79,26 +79,25 @@ const FAQ = () => {
           <FloatingElements count={4} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444']} size="small" />
           {faqs.map((faq, index) => (
             <ScrollAnimation key={index} animation="fadeInUp" delay={300 + index * 100}>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 relative group">
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 relative group">
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-all duration-300 group-hover:bg-blue-50"
+                  className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset"
                 >
-                  <span className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300 animate-text-reveal">{faq.question}</span>
-                  <div className={`transition-all duration-300 ${openIndex === index ? 'rotate-180' : 'rotate-0'}`}>
+                  <span className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">{faq.question}</span>
+                  <div className={`transition-transform duration-200 ${openIndex === index ? 'rotate-180' : 'rotate-0'}`}>
                     {openIndex === index ? (
-                      <ChevronUp className="w-5 h-5 text-gray-500 group-hover:text-blue-600 transition-colors duration-300" />
+                      <ChevronUp className="w-5 h-5 text-gray-500 group-hover:text-blue-600 transition-colors duration-200" />
                     ) : (
-                      <ChevronDown className="w-5 h-5 text-gray-500 group-hover:text-blue-600 transition-colors duration-300" />
+                      <ChevronDown className="w-5 h-5 text-gray-500 group-hover:text-blue-600 transition-colors duration-200" />
                     )}
                   </div>
                 </button>
                 {openIndex === index && (
-                  <div className="px-6 pb-4 animate-fade-in-up">
-                    <p className="text-gray-700 animate-fade-in-up">{faq.answer}</p>
+                  <div className="px-6 pb-4 border-t border-gray-100">
+                    <p className="text-gray-700 pt-4">{faq.answer}</p>
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-purple-600/0 group-hover:from-blue-600/5 group-hover:to-purple-600/5 transition-all duration-500 rounded-lg"></div>
               </div>
             </ScrollAnimation>
           ))}
