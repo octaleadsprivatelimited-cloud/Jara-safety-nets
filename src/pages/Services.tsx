@@ -195,25 +195,22 @@ const Services = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {serviceImages.map((service, index) => (
                 <ScrollAnimation key={index} animation="fadeInUp" delay={300 + index * 200}>
-                  <AnimatedCard 
-                    variant={index % 2 === 0 ? 'magnetic' : 'glow'} 
-                    intensity="high" 
-                    className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20"
-                  >
-                  <div className="relative overflow-hidden rounded-xl mb-4">
-                    <img 
-                      src={service.image} 
-                      alt={service.description}
-                      className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className="absolute bottom-2 right-2 bg-white/90 backdrop-blur-sm rounded-full p-2">
-                      <CheckCircle className="w-4 h-4 text-blue-600" />
+                  <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-500 hover:scale-105 hover:-translate-y-2 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-20 h-20 bg-white/5 rounded-full -translate-y-10 translate-x-10 animate-pulse-glow"></div>
+                    <div className="relative overflow-hidden rounded-xl mb-4">
+                      <img 
+                        src={service.image} 
+                        alt={service.description}
+                        className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:from-black/70 transition-all duration-500"></div>
+                      <div className="absolute bottom-2 right-2 bg-white/90 backdrop-blur-sm rounded-full p-2 group-hover:scale-110 transition-transform duration-300">
+                        <CheckCircle className="w-4 h-4 text-blue-600" />
+                      </div>
                     </div>
+                    <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-200 transition-colors duration-300 animate-text-reveal">{service.title}</h3>
+                    <p className="text-blue-100 text-sm animate-fade-in-up">{service.description}</p>
                   </div>
-                  <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-200 transition-colors">{service.title}</h3>
-                  <p className="text-blue-100 text-sm">{service.description}</p>
-                  </AnimatedCard>
                 </ScrollAnimation>
               ))}
             </div>
@@ -221,46 +218,59 @@ const Services = () => {
         </div>
 
         {/* Service Categories */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Service Categories</h2>
+        <div className="mb-16 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 to-purple-50/20"></div>
+          <FloatingElements count={4} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444']} size="small" />
+          <ScrollAnimation animation="fadeInUp" delay={200}>
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center text-gradient animate-text-reveal">Service Categories</h2>
+          </ScrollAnimation>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-blue-800 mb-4">Safety & Bird Nets</h3>
-              <ul className="text-gray-600 space-y-2">
-                <li>• Balcony Safety Nets</li>
-                <li>• Kids Net for Balcony</li>
-                <li>• Pets Safety Nets</li>
-                <li>• Grill Balcony Safety Nets</li>
-                <li>• Pigeon Nets</li>
-                <li>• Bird Spikes</li>
-                <li>• Building Safety Nets</li>
-                <li>• Duct Area Safety Nets</li>
-                <li>• Construction Safety Nets</li>
-              </ul>
-            </div>
+            <ScrollAnimation animation="fadeInUp" delay={300}>
+              <div className="bg-blue-50 p-6 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-blue-600/10 rounded-full -translate-y-10 translate-x-10 animate-pulse-glow"></div>
+                <h3 className="text-xl font-semibold text-blue-800 mb-4 animate-text-reveal">Safety & Bird Nets</h3>
+                <ul className="text-gray-600 space-y-2">
+                  <li className="animate-fade-in-up">• Balcony Safety Nets</li>
+                  <li className="animate-fade-in-up">• Kids Net for Balcony</li>
+                  <li className="animate-fade-in-up">• Pets Safety Nets</li>
+                  <li className="animate-fade-in-up">• Grill Balcony Safety Nets</li>
+                  <li className="animate-fade-in-up">• Pigeon Nets</li>
+                  <li className="animate-fade-in-up">• Bird Spikes</li>
+                  <li className="animate-fade-in-up">• Building Safety Nets</li>
+                  <li className="animate-fade-in-up">• Duct Area Safety Nets</li>
+                  <li className="animate-fade-in-up">• Construction Safety Nets</li>
+                </ul>
+              </div>
+            </ScrollAnimation>
 
-            <div className="bg-green-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-green-800 mb-4">Invisible Grills</h3>
-              <ul className="text-gray-600 space-y-2">
-                <li>• Invisible safety grill for balcony</li>
-                <li>• Balcony invisible grill</li>
-                <li>• Invisible grills for windows</li>
-                <li>• Casement invisible grille</li>
-              </ul>
-            </div>
+            <ScrollAnimation animation="fadeInUp" delay={400}>
+              <div className="bg-green-50 p-6 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-green-600/10 rounded-full -translate-y-10 translate-x-10 animate-wave"></div>
+                <h3 className="text-xl font-semibold text-green-800 mb-4 animate-text-reveal">Invisible Grills</h3>
+                <ul className="text-gray-600 space-y-2">
+                  <li className="animate-fade-in-up">• Invisible safety grill for balcony</li>
+                  <li className="animate-fade-in-up">• Balcony invisible grill</li>
+                  <li className="animate-fade-in-up">• Invisible grills for windows</li>
+                  <li className="animate-fade-in-up">• Casement invisible grille</li>
+                </ul>
+              </div>
+            </ScrollAnimation>
 
-            <div className="bg-orange-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-orange-800 mb-4">Sports Nets</h3>
-              <ul className="text-gray-600 space-y-2">
-                <li>• Cricket Practice Nets</li>
-                <li>• Sports Ball Stop Nets</li>
-                <li>• Football Ball Stop Netting</li>
-                <li>• Terrace Cricket Nets</li>
-                <li>• Swimming Pool Safety Nets</li>
-                <li>• Shade Nets</li>
-              </ul>
-            </div>
+            <ScrollAnimation animation="fadeInUp" delay={500}>
+              <div className="bg-orange-50 p-6 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-orange-600/10 rounded-full -translate-y-10 translate-x-10 animate-morphing"></div>
+                <h3 className="text-xl font-semibold text-orange-800 mb-4 animate-text-reveal">Sports Nets</h3>
+                <ul className="text-gray-600 space-y-2">
+                  <li className="animate-fade-in-up">• Cricket Practice Nets</li>
+                  <li className="animate-fade-in-up">• Sports Ball Stop Nets</li>
+                  <li className="animate-fade-in-up">• Football Ball Stop Netting</li>
+                  <li className="animate-fade-in-up">• Terrace Cricket Nets</li>
+                  <li className="animate-fade-in-up">• Swimming Pool Safety Nets</li>
+                  <li className="animate-fade-in-up">• Shade Nets</li>
+                </ul>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
 
@@ -413,8 +423,12 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">All Our Services</h2>
+        <div className="mb-16 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50/10 to-purple-50/10"></div>
+          <FloatingElements count={6} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4']} size="small" />
+          <ScrollAnimation animation="fadeInUp" delay={200}>
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center text-gradient animate-text-reveal">All Our Services</h2>
+          </ScrollAnimation>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => {
               const serviceImages = [
@@ -436,70 +450,96 @@ const Services = () => {
               ];
               
               return (
-                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                  <div className="h-48 relative">
-                    <img 
-                      src={serviceImages[index]} 
-                      alt={service.title}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-                    <div className="absolute top-4 right-4">
-                      <div className={`w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300 ${getColorClasses(service.color)}`}>
-                        {React.createElement(service.icon, { className: "w-6 h-6" })}
+                <ScrollAnimation key={index} animation="fadeInUp" delay={300 + index * 100}>
+                  <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-3 relative group">
+                    <div className="h-48 relative overflow-hidden">
+                      <img 
+                        src={serviceImages[index]} 
+                        alt={service.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent group-hover:from-black/60 transition-all duration-500"></div>
+                      <div className="absolute top-4 right-4">
+                        <div className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 ${getColorClasses(service.color)}`}>
+                          {React.createElement(service.icon, { className: "w-6 h-6" })}
+                        </div>
+                      </div>
+                      <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+                        <p className="text-sm font-semibold text-gray-800">Professional Service</p>
                       </div>
                     </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-3 text-gray-900">{service.title}</h3>
-                    <p className="text-gray-600 mb-4">
-                      {service.description}
-                    </p>
-                    <div className="flex space-x-3">
-                      <a
-                        href={`/services/${service.slug}`}
-                        className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
-                      >
-                        Learn More →
-                      </a>
-                      <a
-                        href="/contact"
-                        className="inline-flex items-center text-green-600 font-semibold hover:text-green-700 transition-colors"
-                      >
-                        Request Quote →
-                      </a>
+                    <div className="p-6">
+                      <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors duration-300 animate-text-reveal">{service.title}</h3>
+                      <p className="text-gray-600 mb-4 animate-fade-in-up">
+                        {service.description}
+                      </p>
+                      <div className="flex space-x-3">
+                        <a
+                          href={`/services/${service.slug}`}
+                          className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 hover:scale-105"
+                        >
+                          Learn More →
+                        </a>
+                        <a
+                          href="/contact"
+                          className="inline-flex items-center text-green-600 font-semibold hover:text-green-700 transition-all duration-300 hover:scale-105"
+                        >
+                          Request Quote →
+                        </a>
+                      </div>
                     </div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-purple-600/0 group-hover:from-blue-600/5 group-hover:to-purple-600/5 transition-all duration-500 rounded-lg"></div>
                   </div>
-                </div>
+                </ScrollAnimation>
               );
             })}
           </div>
         </div>
 
         {/* Call to Action */}
-        <div className="bg-blue-50 rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Need Custom Solutions?</h2>
-          <p className="text-gray-600 mb-6">
-            We provide customized safety net solutions tailored to your specific requirements. 
-            Contact us for expert consultation and installation services.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="tel:+918074616049" 
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center justify-center"
-            >
-              <Phone className="mr-2 w-5 h-5" />
-              Call Now: +91 8074616049
-            </a>
-            <a 
-              href="https://wa.me/918074616049?text=Hi%2C%20I%27m%20interested%20in%20your%20safety%20net%20services" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"
-            >
-              WhatsApp Chat
-            </a>
+        <div className="bg-blue-50 rounded-2xl p-8 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-purple-50/50"></div>
+          <div className="absolute inset-0 bg-mesh opacity-10"></div>
+          <FloatingElements count={4} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444']} size="small" />
+          <ParallaxElement speed={0.3} direction="up">
+            <div className="absolute top-10 left-10 w-16 h-16 bg-blue-600/10 rounded-full animate-pulse-glow"></div>
+          </ParallaxElement>
+          <ParallaxElement speed={0.4} direction="down">
+            <div className="absolute bottom-10 right-10 w-12 h-12 bg-green-600/10 rounded-full animate-wave"></div>
+          </ParallaxElement>
+          <div className="relative">
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 text-gradient animate-text-reveal">Need Custom Solutions?</h2>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInUp" delay={400}>
+              <p className="text-gray-600 mb-6 animate-fade-in-up">
+                We provide customized safety net solutions tailored to your specific requirements. 
+                Contact us for expert consultation and installation services.
+              </p>
+            </ScrollAnimation>
+            <ScrollAnimation animation="scaleIn" delay={600}>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <CreativeButton
+                  variant="gradient"
+                  size="lg"
+                  className="inline-flex items-center justify-center"
+                  onClick={() => window.location.href = 'tel:+918074616049'}
+                >
+                  <Phone className="mr-2 w-5 h-5" />
+                  Call Now: +91 8074616049
+                </CreativeButton>
+                <CreativeButton
+                  variant="glow"
+                  size="lg"
+                  className="inline-flex items-center justify-center"
+                  onClick={() => window.location.href = 'https://wa.me/918074616049?text=Hi%2C%20I%27m%20interested%20in%20your%20safety%20net%20services'}
+                >
+                  <Users className="mr-2 w-5 h-5" />
+                  WhatsApp Chat
+                </CreativeButton>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </div>
