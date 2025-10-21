@@ -174,6 +174,115 @@ const CricketPracticeNetsService = () => {
           </div>
         </div>
 
+        {/* Net Specifications */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Net Specifications & Standards</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-orange-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-orange-900">Net Material</h3>
+              <ul className="text-orange-800 space-y-2">
+                <li>• High-density polyethylene (HDPE)</li>
+                <li>• UV-resistant and weatherproof</li>
+                <li>• Professional cricket net grade</li>
+                <li>• Knotless construction</li>
+                <li>• Easy maintenance and cleaning</li>
+              </ul>
+            </div>
+            <div className="bg-orange-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-orange-900">Frame System</h3>
+              <ul className="text-orange-800 space-y-2">
+                <li>• Galvanized steel support poles</li>
+                <li>• Adjustable height system</li>
+                <li>• Ground anchor system</li>
+                <li>• Tension adjustment mechanism</li>
+                <li>• Corrosion-resistant coating</li>
+              </ul>
+            </div>
+            <div className="bg-orange-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-orange-900">Performance Features</h3>
+              <ul className="text-orange-800 space-y-2">
+                <li>• Mesh size: 20mm x 20mm</li>
+                <li>• Ball stopping efficiency: 99%</li>
+                <li>• Wind resistance: Up to 60 km/h</li>
+                <li>• Load capacity: 300kg per panel</li>
+                <li>• Professional tournament grade</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Installation Options */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Installation Options</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">Residential Installation</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Perfect for home practice areas</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Custom sizing for available space</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Easy setup and removal</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Neighbor-friendly design</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">Commercial Installation</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Professional sports facilities</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">School and college installations</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Tournament-grade specifications</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Bulk installation discounts</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Frequently Asked Questions</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">What size cricket nets do you offer?</h3>
+              <p className="text-gray-600">We offer custom sizes from 6x6 feet to 20x20 feet, with standard heights of 8, 10, and 12 feet to suit different practice needs.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">How long does installation take?</h3>
+              <p className="text-gray-600">Most cricket net installations are completed within 4-6 hours, depending on the size and complexity of the setup.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">Do you provide maintenance services?</h3>
+              <p className="text-gray-600">Yes, we offer regular maintenance services including net tension adjustment, frame inspection, and replacement of worn components.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">Are the nets weather-resistant?</h3>
+              <p className="text-gray-600">Our nets are made from UV-resistant materials and can withstand all weather conditions, including heavy rain and strong winds.</p>
+            </div>
+          </div>
+        </div>
+
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-orange-600 to-orange-800 text-white rounded-2xl p-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Set Up Your Cricket Practice Area?</h2>

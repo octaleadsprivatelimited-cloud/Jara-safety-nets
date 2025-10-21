@@ -174,6 +174,115 @@ const ChildrenSafetyNetsService = () => {
           </div>
         </div>
 
+        {/* Safety Standards Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Safety Standards & Compliance</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">Child Safety Standards</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Meets international child safety standards</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Non-toxic materials safe for children</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Tested for durability and strength</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Regular safety inspections included</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">Installation Guarantees</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">5-year warranty on all installations</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Free maintenance for first year</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">24/7 emergency repair service</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Annual safety inspection included</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Materials & Specifications */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Materials & Specifications</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-purple-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-purple-900">Net Material</h3>
+              <ul className="text-purple-800 space-y-2">
+                <li>• High-density polyethylene (HDPE)</li>
+                <li>• UV-resistant coating</li>
+                <li>• Non-toxic and child-safe</li>
+                <li>• Weather-resistant</li>
+                <li>• Easy to clean and maintain</li>
+              </ul>
+            </div>
+            <div className="bg-purple-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-purple-900">Frame Specifications</h3>
+              <ul className="text-purple-800 space-y-2">
+                <li>• Stainless steel mounting brackets</li>
+                <li>• Galvanized steel support structure</li>
+                <li>• Corrosion-resistant coating</li>
+                <li>• Adjustable tension system</li>
+                <li>• Professional-grade hardware</li>
+              </ul>
+            </div>
+            <div className="bg-purple-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-purple-900">Safety Features</h3>
+              <ul className="text-purple-800 space-y-2">
+                <li>• Mesh size: 25mm x 25mm</li>
+                <li>• Load capacity: 200kg per square meter</li>
+                <li>• Break strength: 500kg minimum</li>
+                <li>• Fire-resistant material</li>
+                <li>• Anti-slip surface coating</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Frequently Asked Questions</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">How long does installation take?</h3>
+              <p className="text-gray-600">Most children safety net installations are completed within 2-4 hours, depending on the size and complexity of the area.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">Are the materials safe for children?</h3>
+              <p className="text-gray-600">Yes, all our materials are non-toxic, child-safe, and meet international safety standards for children's products.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">Do you provide warranty?</h3>
+              <p className="text-gray-600">We offer a 5-year warranty on all installations, including free maintenance for the first year and annual safety inspections.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">Can the nets be removed later?</h3>
+              <p className="text-gray-600">Yes, our nets are designed for easy removal without damaging the structure, making them perfect for rental properties.</p>
+            </div>
+          </div>
+        </div>
+
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-2xl p-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Protect Your Children?</h2>

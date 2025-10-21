@@ -174,6 +174,115 @@ const BuildingSafetyNetsService = () => {
           </div>
         </div>
 
+        {/* Safety Standards & Compliance */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Safety Standards & Compliance</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">Industry Standards</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">OSHA safety standards compliance</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">International building codes</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Construction safety regulations</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Regular safety inspections</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">Quality Assurance</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Certified installation team</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Quality control inspections</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Load testing and certification</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Documentation and reporting</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Net Specifications */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Net Specifications & Materials</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-teal-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-teal-900">Net Material</h3>
+              <ul className="text-teal-800 space-y-2">
+                <li>• Industrial-grade polyethylene</li>
+                <li>• UV-resistant and weatherproof</li>
+                <li>• Heavy-duty construction</li>
+                <li>• High tensile strength</li>
+                <li>• Long-lasting durability</li>
+              </ul>
+            </div>
+            <div className="bg-teal-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-teal-900">Support System</h3>
+              <ul className="text-teal-800 space-y-2">
+                <li>• Galvanized steel support structure</li>
+                <li>• Professional mounting hardware</li>
+                <li>• Adjustable tension system</li>
+                <li>• Corrosion-resistant coating</li>
+                <li>• Safety rope integration</li>
+              </ul>
+            </div>
+            <div className="bg-teal-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-teal-900">Safety Features</h3>
+              <ul className="text-teal-800 space-y-2">
+                <li>• Mesh size: 15mm x 15mm</li>
+                <li>• Load capacity: 1000kg per panel</li>
+                <li>• Wind resistance: Up to 100 km/h</li>
+                <li>• Fire-resistant material</li>
+                <li>• Professional installation standards</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Frequently Asked Questions</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">What types of construction projects need safety nets?</h3>
+              <p className="text-gray-600">Safety nets are required for high-rise construction, renovation projects, demolition work, and any construction activity where workers are at risk of falling.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">How long does installation take?</h3>
+              <p className="text-gray-600">Installation time varies by project size, but most building safety net installations are completed within 1-3 days, depending on the building height and complexity.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">Do you provide emergency services?</h3>
+              <p className="text-gray-600">Yes, we offer 24/7 emergency repair services for critical safety net issues to ensure continuous worker protection.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">Are your installations certified?</h3>
+              <p className="text-gray-600">All our installations are certified and come with proper documentation to meet regulatory requirements and safety standards.</p>
+            </div>
+          </div>
+        </div>
+
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-teal-600 to-teal-800 text-white rounded-2xl p-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Secure Your Construction Site?</h2>

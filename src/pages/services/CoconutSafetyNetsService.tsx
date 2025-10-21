@@ -174,6 +174,115 @@ const CoconutSafetyNetsService = () => {
           </div>
         </div>
 
+        {/* Tree Assessment & Planning */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Tree Assessment & Planning</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">Pre-Installation Assessment</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Tree height and canopy spread measurement</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Coconut production cycle analysis</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Surrounding area safety evaluation</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Access route planning for installation</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">Custom Design Planning</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Net positioning for maximum coverage</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Support structure design</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Harvest access considerations</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-600">Maintenance accessibility planning</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Net Specifications */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Net Specifications & Materials</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-yellow-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-yellow-900">Net Material</h3>
+              <ul className="text-yellow-800 space-y-2">
+                <li>• Heavy-duty polyethylene (HDPE)</li>
+                <li>• UV-resistant and weatherproof</li>
+                <li>• Coconut-specific mesh design</li>
+                <li>• High tensile strength</li>
+                <li>• Long-lasting durability</li>
+              </ul>
+            </div>
+            <div className="bg-yellow-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-yellow-900">Support System</h3>
+              <ul className="text-yellow-800 space-y-2">
+                <li>• Galvanized steel support poles</li>
+                <li>• Ground anchor system</li>
+                <li>• Tension adjustment mechanism</li>
+                <li>• Corrosion-resistant coating</li>
+                <li>• Professional mounting hardware</li>
+              </ul>
+            </div>
+            <div className="bg-yellow-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-yellow-900">Safety Features</h3>
+              <ul className="text-yellow-800 space-y-2">
+                <li>• Mesh size: 30mm x 30mm</li>
+                <li>• Coconut impact resistance</li>
+                <li>• Load capacity: 500kg per panel</li>
+                <li>• Wind resistance: Up to 80 km/h</li>
+                <li>• Easy coconut collection</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Frequently Asked Questions</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">How do you install nets around coconut trees?</h3>
+              <p className="text-gray-600">We use specialized climbing equipment and safety gear to install nets at the appropriate height around the coconut tree canopy, ensuring maximum protection.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">Will the nets affect coconut harvesting?</h3>
+              <p className="text-gray-600">Our nets are designed to allow easy coconut harvesting while providing safety. The mesh size allows for easy collection of fallen coconuts.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">How long do the nets last?</h3>
+              <p className="text-gray-600">Our coconut safety nets are designed to last 8-10 years with proper maintenance, making them a long-term safety solution.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">Do you provide maintenance services?</h3>
+              <p className="text-gray-600">Yes, we offer annual maintenance services including net inspection, tension adjustment, and replacement of worn components.</p>
+            </div>
+          </div>
+        </div>
+
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-yellow-600 to-yellow-800 text-white rounded-2xl p-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Protect Against Falling Coconuts?</h2>
