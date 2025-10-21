@@ -68,13 +68,15 @@ const Services = () => {
       icon: Baby,
       title: 'Children Safety Nets',
       description: 'Create a safe environment for children with specially designed safety nets for windows and balconies.',
-      color: 'purple'
+      color: 'purple',
+      slug: 'children-safety-nets'
     },
     {
       icon: Target,
       title: 'Cricket Practice Nets',
       description: 'Professional cricket practice nets for sports facilities, schools, and residential areas.',
-      color: 'orange'
+      color: 'orange',
+      slug: 'cricket-practice-nets'
     },
     {
       icon: Users,
@@ -94,13 +96,15 @@ const Services = () => {
       icon: TreePine,
       title: 'Coconut Safety Nets',
       description: 'Protect against falling coconuts with our specialized safety net systems.',
-      color: 'yellow'
+      color: 'yellow',
+      slug: 'coconut-safety-nets'
     },
     {
       icon: Building,
       title: 'Building Safety Nets',
       description: 'Comprehensive building safety net solutions for construction and renovation projects.',
-      color: 'teal'
+      color: 'teal',
+      slug: 'building-safety-nets'
     },
     {
       icon: Shirt,
