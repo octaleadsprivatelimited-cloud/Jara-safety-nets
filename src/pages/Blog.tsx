@@ -218,13 +218,9 @@ const Blog = () => {
                         placeholder="Enter your email"
                         className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white hover:scale-105 transition-transform duration-300"
                       />
-                      <CreativeButton
-                        variant="glow"
-                        size="lg"
-                        className="bg-white text-blue-600 hover:bg-blue-50"
-                      >
+                      <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                         Subscribe
-                      </CreativeButton>
+                      </button>
                     </div>
                   </ScrollAnimation>
                 </div>
