@@ -110,43 +110,50 @@ const Services = () => {
       icon: Shirt,
       title: 'Cloth Hangers',
       description: 'Durable and weather-resistant cloth hanging solutions for outdoor spaces.',
-      color: 'pink'
+      color: 'pink',
+      slug: 'cloth-hangers'
     },
     {
       icon: CheckCircle,
       title: 'Bird Spikes',
       description: 'Effective bird deterrent spikes to prevent birds from landing on ledges and surfaces.',
-      color: 'lime'
+      color: 'lime',
+      slug: 'bird-spikes'
     },
     {
       icon: Bug,
       title: 'Mosquito Nets',
       description: 'High-quality mosquito nets for windows and doors to protect against insects.',
-      color: 'cyan'
+      color: 'cyan',
+      slug: 'mosquito-nets'
     },
     {
       icon: Sun,
       title: 'Shade Nets',
       description: 'Professional shade netting solutions for agricultural and commercial applications.',
-      color: 'emerald'
+      color: 'emerald',
+      slug: 'shade-nets'
     },
     {
       icon: Building,
       title: 'Deck Area Safety Nets',
       description: 'Safety net solutions for deck areas, terraces, and elevated platforms.',
-      color: 'violet'
+      color: 'violet',
+      slug: 'deck-area-safety-nets'
     },
     {
       icon: Building,
       title: 'Building Covering',
       description: 'Complete building covering solutions for construction sites and temporary structures.',
-      color: 'amber'
+      color: 'amber',
+      slug: 'building-covering'
     },
     {
       icon: TreePine,
       title: 'Green Grass Installation',
       description: 'Artificial and natural grass installation services for lawns, terraces, and gardens.',
-      color: 'rose'
+      color: 'rose',
+      slug: 'green-grass-installation'
     }
   ];
 

@@ -24,6 +24,13 @@ import ChildrenSafetyNetsService from './pages/services/ChildrenSafetyNetsServic
 import CricketPracticeNetsService from './pages/services/CricketPracticeNetsService';
 import CoconutSafetyNetsService from './pages/services/CoconutSafetyNetsService';
 import BuildingSafetyNetsService from './pages/services/BuildingSafetyNetsService';
+import GreenGrassInstallationService from './pages/services/GreenGrassInstallationService';
+import BuildingCoveringService from './pages/services/BuildingCoveringService';
+import DeckAreaSafetyNetsService from './pages/services/DeckAreaSafetyNetsService';
+import ShadeNetsService from './pages/services/ShadeNetsService';
+import MosquitoNetsService from './pages/services/MosquitoNetsService';
+import ClothHangersService from './pages/services/ClothHangersService';
+import BirdSpikesService from './pages/services/BirdSpikesService';
 
 function App() {
   return (
@@ -57,6 +64,13 @@ function App() {
             <Route path="/services/cricket-practice-nets" element={<CricketPracticeNetsService />} />
             <Route path="/services/coconut-safety-nets" element={<CoconutSafetyNetsService />} />
             <Route path="/services/building-safety-nets" element={<BuildingSafetyNetsService />} />
+            <Route path="/services/green-grass-installation" element={<GreenGrassInstallationService />} />
+            <Route path="/services/building-covering" element={<BuildingCoveringService />} />
+            <Route path="/services/deck-area-safety-nets" element={<DeckAreaSafetyNetsService />} />
+            <Route path="/services/shade-nets" element={<ShadeNetsService />} />
+            <Route path="/services/mosquito-nets" element={<MosquitoNetsService />} />
+            <Route path="/services/cloth-hangers" element={<ClothHangersService />} />
+            <Route path="/services/bird-spikes" element={<BirdSpikesService />} />
           </Routes>
         </main>
         <Footer />

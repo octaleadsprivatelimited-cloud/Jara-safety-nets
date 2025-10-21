@@ -1,0 +1,206 @@
+import React from 'react';
+import { Sun, Shield, CheckCircle, Phone, Award, Users, TreePine } from 'lucide-react';
+
+const ShadeNetsService = () => {
+  const features = [
+    {
+      icon: Sun,
+      title: 'UV Protection',
+      description: 'Professional shade netting solutions that provide excellent UV protection and temperature control.'
+    },
+    {
+      icon: Shield,
+      title: 'Weather Resistant',
+      description: 'Durable materials that withstand harsh weather conditions and provide long-lasting protection.'
+    },
+    {
+      icon: CheckCircle,
+      title: 'Custom Solutions',
+      description: 'Tailored shade net solutions for agricultural, commercial, and residential applications.'
+    }
+  ];
+
+  const benefits = [
+    'Reduces temperature by 5-10 degrees',
+    'Protects from harmful UV rays',
+    'Reduces water evaporation',
+    'Improves plant growth',
+    'Customizable for different applications',
+    'Professional installation with warranty'
+  ];
+
+  return (
+    <div className="min-h-screen py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Hero Section */}
+        <div className="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white rounded-2xl p-8 md:p-12 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                Shade Nets
+              </h1>
+              <p className="text-xl text-emerald-100 mb-8">
+                Professional shade netting solutions for agricultural and commercial applications. 
+                Protect your plants and property from harsh sunlight and extreme weather conditions.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="tel:+918074616049"
+                  className="bg-white text-emerald-600 px-6 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-colors inline-flex items-center justify-center"
+                >
+                  <Phone className="mr-2 w-5 h-5" />
+                  Call Now: +91 8074616049
+                </a>
+                <a
+                  href="https://wa.me/918074616049?text=Hi%2C%20I%27m%20interested%20in%20Shade%20Nets"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-emerald-600 transition-colors inline-flex items-center justify-center"
+                >
+                  WhatsApp Chat
+                </a>
+              </div>
+            </div>
+            <div className="relative">
+              <img
+                src="/images/Shade Nets.webp"
+                alt="Shade Nets"
+                className="w-full h-80 object-cover rounded-xl shadow-2xl"
+              />
+              <div className="absolute inset-0 bg-emerald-600/20 rounded-xl"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* Features Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Why Choose Our Shade Nets?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-emerald-600" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Benefits Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Key Benefits</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">Protection Benefits</h3>
+              <ul className="space-y-3">
+                {benefits.slice(0, 3).map((benefit, index) => (
+                  <li key={index} className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">Installation Benefits</h3>
+              <ul className="space-y-3">
+                {benefits.slice(3).map((benefit, index) => (
+                  <li key={index} className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Installation Process */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Installation Process</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">1</span>
+              </div>
+              <h3 className="font-semibold mb-2">Site Assessment</h3>
+              <p className="text-gray-600 text-sm">We assess your area and determine the best shade net configuration.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">2</span>
+              </div>
+              <h3 className="font-semibold mb-2">Material Selection</h3>
+              <p className="text-gray-600 text-sm">Choose the right shade net material based on your specific needs.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">3</span>
+              </div>
+              <h3 className="font-semibold mb-2">Professional Installation</h3>
+              <p className="text-gray-600 text-sm">Expert installation ensuring proper tension and coverage.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">4</span>
+              </div>
+              <h3 className="font-semibold mb-2">Quality Check</h3>
+              <p className="text-gray-600 text-sm">Final inspection to ensure proper installation and functionality.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Why Choose Us */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Why Choose JARA Safety Nets?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center p-6 bg-emerald-50 rounded-lg">
+              <Award className="w-12 h-12 text-emerald-600 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-3">12+ Years Experience</h3>
+              <p className="text-gray-600">Over a decade of experience in shade net installations.</p>
+            </div>
+            <div className="text-center p-6 bg-emerald-50 rounded-lg">
+              <Users className="w-12 h-12 text-emerald-600 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-3">Expert Team</h3>
+              <p className="text-gray-600">Trained professionals with expertise in agricultural and commercial shade solutions.</p>
+            </div>
+            <div className="text-center p-6 bg-emerald-50 rounded-lg">
+              <Shield className="w-12 h-12 text-emerald-600 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-3">Quality Assurance</h3>
+              <p className="text-gray-600">All installations come with warranty and quality guarantee.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white rounded-2xl p-8 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready to Install Shade Nets?</h2>
+          <p className="text-xl text-emerald-100 mb-8 max-w-3xl mx-auto">
+            Get a free quote for shade nets installation. Our experts are ready to help you protect your plants and property.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:+918074616049"
+              className="bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-colors inline-flex items-center justify-center"
+            >
+              <Phone className="mr-2 w-5 h-5" />
+              Call Now: +91 8074616049
+            </a>
+            <a
+              href="https://wa.me/918074616049?text=Hi%2C%20I%27m%20interested%20in%20Shade%20Nets"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-emerald-600 transition-colors inline-flex items-center justify-center"
+            >
+              WhatsApp Chat
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ShadeNetsService;
