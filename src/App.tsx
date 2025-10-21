@@ -20,6 +20,10 @@ import BalconySafetyNetsService from './pages/services/BalconySafetyNetsService'
 import InvisibleGrillsService from './pages/services/InvisibleGrillsService';
 import BirdProtectionNetsService from './pages/services/BirdProtectionNetsService';
 import SportsNetsService from './pages/services/SportsNetsService';
+import ChildrenSafetyNetsService from './pages/services/ChildrenSafetyNetsService';
+import CricketPracticeNetsService from './pages/services/CricketPracticeNetsService';
+import CoconutSafetyNetsService from './pages/services/CoconutSafetyNetsService';
+import BuildingSafetyNetsService from './pages/services/BuildingSafetyNetsService';
 
 function App() {
   return (
@@ -49,6 +53,10 @@ function App() {
             <Route path="/services/invisible-grills" element={<InvisibleGrillsService />} />
             <Route path="/services/bird-protection-nets" element={<BirdProtectionNetsService />} />
             <Route path="/services/sports-nets" element={<SportsNetsService />} />
+            <Route path="/services/children-safety-nets" element={<ChildrenSafetyNetsService />} />
+            <Route path="/services/cricket-practice-nets" element={<CricketPracticeNetsService />} />
+            <Route path="/services/coconut-safety-nets" element={<CoconutSafetyNetsService />} />
+            <Route path="/services/building-safety-nets" element={<BuildingSafetyNetsService />} />
           </Routes>
         </main>
         <Footer />
