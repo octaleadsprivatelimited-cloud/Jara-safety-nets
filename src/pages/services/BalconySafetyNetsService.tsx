@@ -101,7 +101,11 @@ const BalconySafetyNetsService = () => {
             </div>
             <div className="relative">
               <img 
+<<<<<<< HEAD
                 src="/images/Balcony Safety Nets.webp" 
+=======
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop" 
+>>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
                 alt="Balcony Safety Nets"
                 className="w-full h-80 object-cover rounded-xl shadow-2xl"
               />

@@ -20,6 +20,7 @@ const Gallery = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Safety & Bird Nets Gallery</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
+<<<<<<< HEAD
               { name: 'Balcony Safety Net', image: '/images/Balcony Safety Nets.webp', badge: 'Safety First', badgeColor: 'bg-blue-600' },
               { name: 'Kids Net for Balcony', image: '/images/Children Safety Nets.avif', badge: 'Child Safe', badgeColor: 'bg-green-600' },
               { name: 'Pets Safety Nets', image: '/images/Children Safety Nets.avif', badge: 'Pet Friendly', badgeColor: 'bg-purple-600' },
@@ -29,6 +30,17 @@ const Gallery = () => {
               { name: 'Building Safety Nets', image: '/images/Building Safety Nets.avif', badge: 'Industrial', badgeColor: 'bg-teal-600' },
               { name: 'Duct Area Safety Nets', image: '/images/Duct Area Safety Nets.avif', badge: 'Ventilation', badgeColor: 'bg-yellow-600' },
               { name: 'Construction Safety Nets', image: '/images/Building Covering.avif', badge: 'Construction', badgeColor: 'bg-pink-600' }
+=======
+              { name: 'Balcony Safety Net', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=300&fit=crop', badge: 'Safety First', badgeColor: 'bg-blue-600' },
+              { name: 'Kids Net for Balcony', image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&h=300&fit=crop', badge: 'Child Safe', badgeColor: 'bg-green-600' },
+              { name: 'Pets Safety Nets', image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=500&h=300&fit=crop', badge: 'Pet Friendly', badgeColor: 'bg-purple-600' },
+              { name: 'Grill Balcony Safety Nets', image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=500&h=300&fit=crop', badge: 'Secure', badgeColor: 'bg-orange-600' },
+              { name: 'Pigeon Nets', image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=300&fit=crop', badge: 'Bird Free', badgeColor: 'bg-red-600' },
+              { name: 'Bird Spikes', image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=300&fit=crop', badge: 'Deterrent', badgeColor: 'bg-indigo-600' },
+              { name: 'Building Safety Nets', image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=500&h=300&fit=crop', badge: 'Industrial', badgeColor: 'bg-teal-600' },
+              { name: 'Duct Area Safety Nets', image: 'https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500&h=300&fit=crop', badge: 'Ventilation', badgeColor: 'bg-yellow-600' },
+              { name: 'Construction Safety Nets', image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&h=300&fit=crop', badge: 'Construction', badgeColor: 'bg-pink-600' }
+>>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
             ].map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="h-48 relative">
@@ -70,10 +82,17 @@ const Gallery = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Invisible Grills Gallery</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
+<<<<<<< HEAD
               { name: 'Invisible safety grill for balcony', image: '/images/All Invisible Grills.webp' },
               { name: 'Balcony invisible grill', image: '/images/All Invisible Grills.webp' },
               { name: 'Invisible grills for windows', image: '/images/All Invisible Grills.webp' },
               { name: 'Casement invisible grille', image: '/images/All Invisible Grills.webp' }
+=======
+              { name: 'Invisible safety grill for balcony', image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500&h=300&fit=crop' },
+              { name: 'Balcony invisible grill', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=500&h=300&fit=crop' },
+              { name: 'Invisible grills for windows', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=300&fit=crop' },
+              { name: 'Casement invisible grille', image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=500&h=300&fit=crop' }
+>>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
             ].map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="h-48 relative">
@@ -115,12 +134,21 @@ const Gallery = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Sports Nets Gallery</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
+<<<<<<< HEAD
               { name: 'Cricket Practice Nets', image: '/images/Cricket Practice Nets.webp' },
               { name: 'Sports Ball Stop Nets', image: '/images/All Sports Nets.avif' },
               { name: 'Football Ball Stop Netting', image: '/images/All Sports Nets.avif' },
               { name: 'Terrace Cricket Nets', image: '/images/Cricket Practice Nets.webp' },
               { name: 'Swimming Pool Safety Nets', image: '/images/Sports Nets.webp' },
               { name: 'Shade Nets', image: '/images/Shade Nets.webp' }
+=======
+              { name: 'Cricket Practice Nets', image: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=500&h=300&fit=crop' },
+              { name: 'Sports Ball Stop Nets', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=300&fit=crop' },
+              { name: 'Football Ball Stop Netting', image: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=500&h=300&fit=crop' },
+              { name: 'Terrace Cricket Nets', image: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=500&h=300&fit=crop' },
+              { name: 'Swimming Pool Safety Nets', image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&h=300&fit=crop' },
+              { name: 'Shade Nets', image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&h=300&fit=crop' }
+>>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
             ].map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="h-48 relative">

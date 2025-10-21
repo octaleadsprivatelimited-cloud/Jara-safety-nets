@@ -101,7 +101,11 @@ const SportsNetsService = () => {
             </div>
             <div className="relative">
               <img 
+<<<<<<< HEAD
                 src="/images/Sports Nets.webp" 
+=======
+                src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=400&fit=crop" 
+>>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
                 alt="Sports Nets"
                 className="w-full h-80 object-cover rounded-xl shadow-2xl"
               />

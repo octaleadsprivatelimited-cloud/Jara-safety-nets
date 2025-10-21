@@ -8,7 +8,11 @@ const Blog = () => {
       id: 'balcony-safety-nets',
       title: 'Ensuring Peace of Mind: The Importance of Balcony Safety Nets',
       excerpt: 'A Crucial Element for Peaceful Living. In today\'s fast-paced world, ensuring the protection of our loved ones is of utmost importance. One area that often goes overlooked is balcony safety.',
+<<<<<<< HEAD
       image: '/images/Blog 1.webp',
+=======
+      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=300&fit=crop',
+>>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
       category: 'Safety Nets',
       date: 'December 15, 2024',
       author: 'JARA Safety Nets Team',
@@ -19,7 +23,11 @@ const Blog = () => {
       id: 'pigeon-prevention-nets',
       title: 'Protecting Your Property: The Importance of Pigeon Prevention Nets',
       excerpt: 'Safeguard Your Assets: The Significance of Pigeon Prevention Nets. Protecting your property is of utmost importance. Pigeon nets play a crucial role in ensuring the security and well-being of your property.',
+<<<<<<< HEAD
       image: '/images/Blog 2.avif',
+=======
+      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=300&fit=crop',
+>>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
       category: 'Bird Protection',
       date: 'December 10, 2024',
       author: 'JARA Safety Nets Team',

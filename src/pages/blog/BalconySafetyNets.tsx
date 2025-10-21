@@ -21,7 +21,11 @@ const BalconySafetyNets = () => {
         <article className="bg-white rounded-xl shadow-professional-lg overflow-hidden">
           <div className="h-64 md:h-80 relative">
             <img 
+<<<<<<< HEAD
               src="/images/Blog 1.webp" 
+=======
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=400&fit=crop" 
+>>>>>>> 193e07086d05fa80a406818c5ad9d94e72c5760a
               alt="Balcony Safety Nets"
               className="w-full h-full object-cover"
             />
