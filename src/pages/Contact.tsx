@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle, AlertCircle, MessageCircle, Users, Shield, Star } from 'lucide-react';
 import { ApiService } from '../services/api';
 import { ValidationService } from '../services/validation';
 import { StorageService } from '../services/storage';
+import ScrollAnimation from '../components/ScrollAnimation';
+import ParallaxElement from '../components/ParallaxElement';
+import FloatingElements from '../components/FloatingElements';
+import CreativeButton from '../components/CreativeButton';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -101,22 +105,82 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-20 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-purple-50/30"></div>
+      <FloatingElements count={6} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4']} size="small" />
+      <ParallaxElement speed={0.3} direction="up">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-200/20 rounded-full animate-pulse-glow"></div>
+      </ParallaxElement>
+      <ParallaxElement speed={0.4} direction="down">
+        <div className="absolute top-40 right-20 w-24 h-24 bg-purple-200/20 rounded-full animate-wave"></div>
+      </ParallaxElement>
+      <ParallaxElement speed={0.2} direction="up">
+        <div className="absolute bottom-20 left-1/4 w-20 h-20 bg-green-200/20 rounded-full animate-morphing"></div>
+      </ParallaxElement>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Contact Us
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get in touch for a free quote or any questions about our safety net solutions
-          </p>
+        <div className="text-center mb-16 relative">
+          <ScrollAnimation animation="fadeInUp" delay={200}>
+            <div className="inline-flex items-center bg-blue-100/50 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+              <MessageCircle className="w-5 h-5 mr-2 text-blue-600" />
+              <span className="text-sm font-medium text-blue-800">Get in Touch</span>
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation animation="fadeInUp" delay={400}>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gradient animate-text-reveal">
+              Contact Us
+            </h1>
+          </ScrollAnimation>
+          <ScrollAnimation animation="fadeInUp" delay={600}>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up">
+              Get in touch for a free quote or any questions about our safety net solutions
+            </p>
+          </ScrollAnimation>
+          
+          {/* Animated Stats */}
+          <ScrollAnimation animation="scaleIn" delay={800}>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
+              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
+                  <Users className="w-6 h-6 text-blue-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2 animate-text-reveal">500+</h3>
+                <p className="text-gray-600 animate-fade-in-up">Happy Customers</p>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 animate-wave">
+                  <Shield className="w-6 h-6 text-green-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2 animate-text-reveal">12+</h3>
+                <p className="text-gray-600 animate-fade-in-up">Years Experience</p>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 animate-rotate3d">
+                  <Star className="w-6 h-6 text-yellow-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2 animate-text-reveal">24/7</h3>
+                <p className="text-gray-600 animate-fade-in-up">Support Available</p>
+              </div>
+            </div>
+          </ScrollAnimation>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+          <ScrollAnimation animation="fadeInLeft" delay={200}>
+            <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-8 relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-purple-50/50"></div>
+              <FloatingElements count={3} colors={['#3b82f6', '#10b981', '#f59e0b']} size="small" />
+              <div className="relative">
+                <ScrollAnimation animation="fadeInUp" delay={400}>
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 animate-pulse-glow">
+                      <MessageCircle className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <h2 className="text-2xl font-bold text-gray-900 animate-text-reveal">Send us a Message</h2>
+                  </div>
+                </ScrollAnimation>
             
             {/* Status Messages */}
             {submitStatus.type && (
@@ -146,203 +210,271 @@ const Contact = () => {
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors ${
-                      errors.error_name ? 'border-red-300 bg-red-50' : 'border-gray-300'
-                    }`}
-                    placeholder="Your full name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors ${
-                      errors.error_email ? 'border-red-300 bg-red-50' : 'border-gray-300'
-                    }`}
-                    placeholder="your@email.com"
-                  />
-                </div>
-              </div>
+                <ScrollAnimation animation="fadeInUp" delay={600}>
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="group">
+                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                          Full Name *
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          required
+                          value={formData.name}
+                          onChange={handleChange}
+                          className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:shadow-md hover:scale-105 ${
+                            errors.error_name ? 'border-red-300 bg-red-50' : 'border-gray-300 hover:border-blue-300'
+                          }`}
+                          placeholder="Your full name"
+                        />
+                      </div>
+                      <div className="group">
+                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                          Email Address *
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          required
+                          value={formData.email}
+                          onChange={handleChange}
+                          className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:shadow-md hover:scale-105 ${
+                            errors.error_email ? 'border-red-300 bg-red-50' : 'border-gray-300 hover:border-blue-300'
+                          }`}
+                          placeholder="your@email.com"
+                        />
+                      </div>
+                    </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors ${
-                      errors.error_phone ? 'border-red-300 bg-red-50' : 'border-gray-300'
-                    }`}
-                    placeholder="+91 98765 43210"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                    Subject *
-                  </label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    required
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors ${
-                      errors.error_subject ? 'border-red-300 bg-red-50' : 'border-gray-300'
-                    }`}
-                  >
-                    <option value="">Select a subject</option>
-                    <option value="quote">Request Quote</option>
-                    <option value="service">Service Inquiry</option>
-                    <option value="support">Technical Support</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-              </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="group">
+                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                          Phone Number
+                        </label>
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:shadow-md hover:scale-105 ${
+                            errors.error_phone ? 'border-red-300 bg-red-50' : 'border-gray-300 hover:border-blue-300'
+                          }`}
+                          placeholder="+91 98765 43210"
+                        />
+                      </div>
+                      <div className="group">
+                        <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                          Subject *
+                        </label>
+                        <select
+                          id="subject"
+                          name="subject"
+                          required
+                          value={formData.subject}
+                          onChange={handleChange}
+                          className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:shadow-md hover:scale-105 ${
+                            errors.error_subject ? 'border-red-300 bg-red-50' : 'border-gray-300 hover:border-blue-300'
+                          }`}
+                        >
+                          <option value="">Select a subject</option>
+                          <option value="quote">Request Quote</option>
+                          <option value="service">Service Inquiry</option>
+                          <option value="support">Technical Support</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </div>
+                    </div>
 
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  rows={5}
-                  value={formData.message}
-                  onChange={handleChange}
-                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-vertical ${
-                    errors.error_message ? 'border-red-300 bg-red-50' : 'border-gray-300'
-                  }`}
-                  placeholder="Tell us about your requirements..."
-                />
-              </div>
+                    <div className="group">
+                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                        Message *
+                      </label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        required
+                        rows={5}
+                        value={formData.message}
+                        onChange={handleChange}
+                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:shadow-md hover:scale-105 resize-vertical ${
+                          errors.error_message ? 'border-red-300 bg-red-50' : 'border-gray-300 hover:border-blue-300'
+                        }`}
+                        placeholder="Tell us about your requirements..."
+                      />
+                    </div>
 
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className={`w-full py-3 px-6 rounded-lg font-semibold transition-colors flex items-center justify-center ${
-                  isSubmitting
-                    ? 'bg-gray-400 cursor-not-allowed'
-                    : 'bg-blue-600 hover:bg-blue-700 text-white'
-                }`}
-              >
-                {isSubmitting ? (
-                  <>
-                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                    Sending...
-                  </>
-                ) : (
-                  <>
-                    <Send className="mr-2 w-5 h-5" />
-                    Send Message
-                  </>
-                )}
-              </button>
-            </form>
-          </div>
+                    <ScrollAnimation animation="scaleIn" delay={800}>
+                      <CreativeButton
+                        type="submit"
+                        variant="gradient"
+                        size="lg"
+                        disabled={isSubmitting}
+                        className="w-full"
+                      >
+                        {isSubmitting ? (
+                          <>
+                            <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                            Sending...
+                          </>
+                        ) : (
+                          <>
+                            <Send className="mr-2 w-5 h-5" />
+                            Send Message
+                          </>
+                        )}
+                      </CreativeButton>
+                    </ScrollAnimation>
+                  </form>
+                </ScrollAnimation>
+              </div>
+            </div>
+          </ScrollAnimation>
 
           {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600">+91 8074616049</p>
-                    <p className="text-gray-600">+91 8466055207</p>
-                  </div>
-                </div>
+          <ScrollAnimation animation="fadeInRight" delay={200}>
+            <div className="space-y-8">
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-8 relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-blue-50/50"></div>
+                <FloatingElements count={4} colors={['#10b981', '#3b82f6', '#f59e0b', '#ef4444']} size="small" />
+                <div className="relative">
+                  <ScrollAnimation animation="fadeInUp" delay={400}>
+                    <div className="flex items-center mb-6">
+                      <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 animate-pulse-glow">
+                        <Users className="w-6 h-6 text-green-600" />
+                      </div>
+                      <h2 className="text-2xl font-bold text-gray-900 animate-text-reveal">Get in Touch</h2>
+                    </div>
+                  </ScrollAnimation>
+                  <div className="space-y-6">
+                    <ScrollAnimation animation="fadeInUp" delay={600}>
+                      <div className="flex items-start space-x-4 group-hover:scale-105 transition-all duration-300">
+                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center animate-pulse-glow">
+                          <Phone className="w-6 h-6 text-blue-600" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors duration-300">Phone</h3>
+                          <p className="text-gray-600 hover:text-blue-600 transition-colors duration-300">+91 8074616049</p>
+                          <p className="text-gray-600 hover:text-blue-600 transition-colors duration-300">+91 8466055207</p>
+                        </div>
+                      </div>
+                    </ScrollAnimation>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-green-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">philipraju1999@gmail.com</p>
-                  </div>
-                </div>
+                    <ScrollAnimation animation="fadeInUp" delay={700}>
+                      <div className="flex items-start space-x-4 group-hover:scale-105 transition-all duration-300">
+                        <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center animate-wave">
+                          <Mail className="w-6 h-6 text-green-600" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-gray-900 mb-1 group-hover:text-green-600 transition-colors duration-300">Email</h3>
+                          <p className="text-gray-600 hover:text-green-600 transition-colors duration-300">philipraju1999@gmail.com</p>
+                        </div>
+                      </div>
+                    </ScrollAnimation>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-purple-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Address</h3>
-                    <p className="text-gray-600">
-                      Green Park Colony, Road No.9<br />
-                      Karmanghat, Hyderabad<br />
-                      Telangana, India
-                    </p>
-                  </div>
-                </div>
+                    <ScrollAnimation animation="fadeInUp" delay={800}>
+                      <div className="flex items-start space-x-4 group-hover:scale-105 transition-all duration-300">
+                        <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center animate-rotate3d">
+                          <MapPin className="w-6 h-6 text-purple-600" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-gray-900 mb-1 group-hover:text-purple-600 transition-colors duration-300">Address</h3>
+                          <p className="text-gray-600 hover:text-purple-600 transition-colors duration-300">
+                            Green Park Colony, Road No.9<br />
+                            Karmanghat, Hyderabad<br />
+                            Telangana, India
+                          </p>
+                        </div>
+                      </div>
+                    </ScrollAnimation>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
-                    <Clock className="w-6 h-6 text-orange-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p className="text-gray-600">Saturday: 9:00 AM - 4:00 PM</p>
-                    <p className="text-gray-600">Sunday: Closed</p>
+                    <ScrollAnimation animation="fadeInUp" delay={900}>
+                      <div className="flex items-start space-x-4 group-hover:scale-105 transition-all duration-300">
+                        <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center animate-morphing">
+                          <Clock className="w-6 h-6 text-orange-600" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-gray-900 mb-1 group-hover:text-orange-600 transition-colors duration-300">Business Hours</h3>
+                          <p className="text-gray-600 hover:text-orange-600 transition-colors duration-300">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                          <p className="text-gray-600 hover:text-orange-600 transition-colors duration-300">Saturday: 9:00 AM - 4:00 PM</p>
+                          <p className="text-gray-600 hover:text-orange-600 transition-colors duration-300">Sunday: Closed</p>
+                        </div>
+                      </div>
+                    </ScrollAnimation>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div className="bg-blue-50 rounded-lg p-8 text-center">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Emergency Support</h3>
-              <p className="text-gray-600 mb-4">
-                Need immediate assistance? Our emergency support team is available 24/7.
-              </p>
-              <a
-                href="tel:+918074616049"
-                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center"
-              >
-                <Phone className="mr-2 w-5 h-5" />
-                Call Emergency Line
-              </a>
-            </div>
+              <ScrollAnimation animation="fadeInUp" delay={1000}>
+                <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-8 text-center relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 to-blue-800/90"></div>
+                  <FloatingElements count={3} colors={['#ffffff', '#3b82f6', '#10b981']} size="small" />
+                  <ParallaxElement speed={0.3} direction="up">
+                    <div className="absolute top-4 right-4 w-16 h-16 bg-white/10 rounded-full animate-pulse-glow"></div>
+                  </ParallaxElement>
+                  <div className="relative">
+                    <ScrollAnimation animation="fadeInUp" delay={200}>
+                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
+                        <Shield className="w-8 h-8 text-white" />
+                      </div>
+                    </ScrollAnimation>
+                    <ScrollAnimation animation="fadeInUp" delay={400}>
+                      <h3 className="text-xl font-bold mb-4 text-gradient animate-text-reveal">Emergency Support</h3>
+                    </ScrollAnimation>
+                    <ScrollAnimation animation="fadeInUp" delay={600}>
+                      <p className="text-blue-100 mb-6 animate-fade-in-up">
+                        Need immediate assistance? Our emergency support team is available 24/7.
+                      </p>
+                    </ScrollAnimation>
+                    <ScrollAnimation animation="scaleIn" delay={800}>
+                      <CreativeButton
+                        href="tel:+918074616049"
+                        variant="glow"
+                        size="lg"
+                        className="inline-flex items-center"
+                      >
+                        <Phone className="mr-2 w-5 h-5" />
+                        Call Emergency Line
+                      </CreativeButton>
+                    </ScrollAnimation>
+                  </div>
+                </div>
+              </ScrollAnimation>
 
-            {/* Google Maps Embed */}
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Find Us</h3>
-              <div className="h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                <p className="text-gray-500">Google Maps Integration</p>
-                <p className="text-gray-400 text-sm ml-2">Green Park Colony, Road No.9, Karmanghat, Hyderabad</p>
-              </div>
+              {/* Google Maps Embed */}
+              <ScrollAnimation animation="fadeInUp" delay={1200}>
+                <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-8 relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-gray-50/50 to-blue-50/50"></div>
+                  <FloatingElements count={2} colors={['#3b82f6', '#10b981']} size="small" />
+                  <div className="relative">
+                    <ScrollAnimation animation="fadeInUp" delay={200}>
+                      <div className="flex items-center mb-6">
+                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 animate-wave">
+                          <MapPin className="w-6 h-6 text-blue-600" />
+                        </div>
+                        <h3 className="text-xl font-bold text-gray-900 animate-text-reveal">Find Us</h3>
+                      </div>
+                    </ScrollAnimation>
+                    <ScrollAnimation animation="fadeInUp" delay={400}>
+                      <div className="h-64 bg-gradient-to-br from-gray-100 to-blue-100 rounded-xl flex items-center justify-center relative overflow-hidden group-hover:shadow-lg transition-all duration-500">
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-200/20 to-green-200/20"></div>
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 animate-rotate3d">
+                            <MapPin className="w-8 h-8 text-blue-600" />
+                          </div>
+                          <p className="text-gray-600 font-semibold animate-text-reveal">Google Maps Integration</p>
+                          <p className="text-gray-500 text-sm mt-2 animate-fade-in-up">Green Park Colony, Road No.9, Karmanghat, Hyderabad</p>
+                        </div>
+                      </div>
+                    </ScrollAnimation>
+                  </div>
+                </div>
+              </ScrollAnimation>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
     </div>
