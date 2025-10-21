@@ -48,18 +48,16 @@ const About = () => {
             </ScrollAnimation>
             <ScrollAnimation animation="fadeInRight" delay={400}>
               <div className="relative">
-                <ParallaxElement speed={0.2} direction="up">
-                  <img 
-                    src="/images/Hero Home.webp" 
-                    alt="JARA Safety Nets - Professional Installation Team"
-                    className="w-full h-80 object-cover rounded-xl shadow-2xl hover:scale-105 transition-transform duration-500"
-                  />
-                </ParallaxElement>
-                <div className="absolute inset-0 bg-blue-600/20 rounded-xl animate-gradient-shift"></div>
-                <div className="absolute bottom-4 left-4 bg-white/90 text-gray-800 px-3 py-2 rounded-lg animate-pulse-glow">
+                <img 
+                  src="/images/Hero Home.webp" 
+                  alt="JARA Safety Nets - Professional Installation Team"
+                  className="w-full h-80 object-cover rounded-xl shadow-2xl hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-600/20 rounded-xl"></div>
+                <div className="absolute bottom-4 left-4 bg-white/90 text-gray-800 px-3 py-2 rounded-lg">
                   <p className="text-sm font-semibold">Expert Installation Team</p>
                 </div>
-                <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold animate-bounce">
+                <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
                   Quality Assured
                 </div>
               </div>
