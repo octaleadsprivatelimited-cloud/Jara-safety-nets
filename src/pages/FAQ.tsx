@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import ScrollAnimation from '../components/ScrollAnimation';
+import ParallaxElement from '../components/ParallaxElement';
+import FloatingElements from '../components/FloatingElements';
+import CreativeButton from '../components/CreativeButton';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -46,52 +50,93 @@ const FAQ = () => {
   return (
     <div className="min-h-screen py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Frequently Asked Questions
-          </h1>
-          <p className="text-xl text-gray-600">
-            Find answers to common questions about our safety net services
-          </p>
+        <div className="text-center mb-16 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-purple-50/30"></div>
+          <div className="absolute inset-0 bg-mesh opacity-20"></div>
+          <FloatingElements count={6} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4']} size="small" />
+          <ParallaxElement speed={0.3} direction="up">
+            <div className="absolute top-10 left-10 w-20 h-20 bg-blue-600/10 rounded-full animate-pulse-glow"></div>
+          </ParallaxElement>
+          <ParallaxElement speed={0.4} direction="down">
+            <div className="absolute bottom-10 right-10 w-16 h-16 bg-green-600/10 rounded-full animate-wave"></div>
+          </ParallaxElement>
+          <div className="relative">
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-gradient animate-text-reveal">
+                Frequently Asked Questions
+              </h1>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInUp" delay={400}>
+              <p className="text-xl text-gray-600 animate-fade-in-up">
+                Find answers to common questions about our safety net services
+              </p>
+            </ScrollAnimation>
+          </div>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50/10 to-purple-50/10"></div>
+          <FloatingElements count={4} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444']} size="small" />
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
-              >
-                <span className="font-semibold text-gray-900">{faq.question}</span>
-                {openIndex === index ? (
-                  <ChevronUp className="w-5 h-5 text-gray-500" />
-                ) : (
-                  <ChevronDown className="w-5 h-5 text-gray-500" />
+            <ScrollAnimation key={index} animation="fadeInUp" delay={300 + index * 100}>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 relative group">
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-all duration-300 group-hover:bg-blue-50"
+                >
+                  <span className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300 animate-text-reveal">{faq.question}</span>
+                  <div className={`transition-all duration-300 ${openIndex === index ? 'rotate-180' : 'rotate-0'}`}>
+                    {openIndex === index ? (
+                      <ChevronUp className="w-5 h-5 text-gray-500 group-hover:text-blue-600 transition-colors duration-300" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-gray-500 group-hover:text-blue-600 transition-colors duration-300" />
+                    )}
+                  </div>
+                </button>
+                {openIndex === index && (
+                  <div className="px-6 pb-4 animate-fade-in-up">
+                    <p className="text-gray-700 animate-fade-in-up">{faq.answer}</p>
+                  </div>
                 )}
-              </button>
-              {openIndex === index && (
-                <div className="px-6 pb-4">
-                  <p className="text-gray-700">{faq.answer}</p>
-                </div>
-              )}
-            </div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-purple-600/0 group-hover:from-blue-600/5 group-hover:to-purple-600/5 transition-all duration-500 rounded-lg"></div>
+              </div>
+            </ScrollAnimation>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <div className="bg-blue-50 rounded-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Still Have Questions?
-            </h2>
-            <p className="text-gray-600 mb-6">
-              Can't find the answer you're looking for? Our team is here to help.
-            </p>
-            <a
-              href="/contact"
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center"
-            >
-              Contact Us
-            </a>
+        <div className="text-center mt-12 relative overflow-hidden">
+          <div className="bg-blue-50 rounded-lg p-8 relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-purple-50/50"></div>
+            <div className="absolute inset-0 bg-mesh opacity-10"></div>
+            <FloatingElements count={5} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6']} size="small" />
+            <ParallaxElement speed={0.3} direction="up">
+              <div className="absolute top-10 left-10 w-16 h-16 bg-blue-600/10 rounded-full animate-pulse-glow"></div>
+            </ParallaxElement>
+            <ParallaxElement speed={0.4} direction="down">
+              <div className="absolute bottom-10 right-10 w-12 h-12 bg-green-600/10 rounded-full animate-wave"></div>
+            </ParallaxElement>
+            <div className="relative">
+              <ScrollAnimation animation="fadeInUp" delay={200}>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 text-gradient animate-text-reveal">
+                  Still Have Questions?
+                </h2>
+              </ScrollAnimation>
+              <ScrollAnimation animation="fadeInUp" delay={400}>
+                <p className="text-gray-600 mb-6 animate-fade-in-up">
+                  Can't find the answer you're looking for? Our team is here to help.
+                </p>
+              </ScrollAnimation>
+              <ScrollAnimation animation="scaleIn" delay={600}>
+                <CreativeButton
+                  variant="gradient"
+                  size="lg"
+                  className="inline-flex items-center"
+                  onClick={() => window.location.href = '/contact'}
+                >
+                  Contact Us
+                </CreativeButton>
+              </ScrollAnimation>
+            </div>
           </div>
         </div>
       </div>
