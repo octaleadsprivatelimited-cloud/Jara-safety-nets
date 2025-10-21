@@ -11,8 +11,6 @@ const Blog = () => {
 
       image: '/images/Blog 1.webp',
 
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=300&fit=crop',
-
       category: 'Safety Nets',
       date: 'December 15, 2024',
       author: 'JARA Safety Nets Team',
@@ -25,8 +23,6 @@ const Blog = () => {
       excerpt: 'Safeguard Your Assets: The Significance of Pigeon Prevention Nets. Protecting your property is of utmost importance. Pigeon nets play a crucial role in ensuring the security and well-being of your property.',
 
       image: '/images/Blog 2.avif',
-
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=300&fit=crop',
 
       category: 'Bird Protection',
       date: 'December 10, 2024',
