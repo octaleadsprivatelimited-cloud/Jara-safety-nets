@@ -163,7 +163,7 @@ const Gallery = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { name: 'Cricket Practice Nets', image: '/images/Cricket Practice Nets.webp' },
-              { name: 'Sports Ball Stop Nets', image: '/images/All Sports Nets.avif' },
+              { name: 'Sports Ball Stop Nets', image: '/images/Sports Nets.webp' },
               { name: 'Football Ball Stop Netting', image: '/images/All Sports Nets.avif' },
               { name: 'Terrace Cricket Nets', image: '/images/Cricket Practice Nets.webp' },
               { name: 'Swimming Pool Safety Nets', image: '/images/Sports Nets.webp' },
