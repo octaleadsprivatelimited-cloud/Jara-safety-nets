@@ -161,28 +161,43 @@ const Services = () => {
     <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-8 md:p-12 mb-12">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Our Services
-            </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Professional safety net solutions for all your needs. From balcony safety to bird protection, 
-              we provide comprehensive netting services with expert installation.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {serviceImages.map((service, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                <img 
-                  src={service.image} 
-                  alt={service.description}
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
-                <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-                <p className="text-blue-100 text-sm">{service.description}</p>
+        <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white rounded-3xl p-8 md:p-12 mb-16 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
+          <div className="relative">
+            <div className="text-center mb-12 animate-fade-in-up">
+              <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                <CheckCircle className="w-5 h-5 mr-2" />
+                <span className="text-sm font-medium">Professional Installation</span>
               </div>
-            ))}
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Our Premium Services
+              </h1>
+              <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                Professional safety net solutions for all your needs. From balcony safety to bird protection, 
+                we provide comprehensive netting services with expert installation.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {serviceImages.map((service, index) => (
+                <div key={index} className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+                  <div className="relative overflow-hidden rounded-xl mb-4">
+                    <img 
+                      src={service.image} 
+                      alt={service.description}
+                      className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    <div className="absolute bottom-2 right-2 bg-white/90 backdrop-blur-sm rounded-full p-2">
+                      <CheckCircle className="w-4 h-4 text-blue-600" />
+                    </div>
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-200 transition-colors">{service.title}</h3>
+                  <p className="text-blue-100 text-sm">{service.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
