@@ -97,7 +97,7 @@ const Header = () => {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
+                  className={`inline-block px-3 py-2 text-base font-medium transition-colors duration-200 ${
                     location.pathname === item.href
                       ? 'text-blue-600 bg-blue-50'
                       : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
