@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Users, Phone, CheckCircle, Home, Bird, Baby, Target, Eye, Building, Shirt, Bug, Sun, TreePine, LucideIcon } from 'lucide-react';
 import ScrollAnimation from '../components/ScrollAnimation';
 import ParallaxElement from '../components/ParallaxElement';
@@ -475,18 +476,18 @@ const Services = () => {
                         {service.description}
                       </p>
                       <div className="flex space-x-3">
-                        <a
-                          href={`/services/${service.slug}`}
+                        <Link
+                          to={`/services/${service.slug}`}
                           className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 hover:scale-105"
                         >
                           Learn More →
-                        </a>
-                        <a
-                          href="/contact"
+                        </Link>
+                        <Link
+                          to="/contact"
                           className="inline-flex items-center text-green-600 font-semibold hover:text-green-700 transition-all duration-300 hover:scale-105"
                         >
                           Request Quote →
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-purple-600/0 group-hover:from-blue-600/5 group-hover:to-purple-600/5 transition-all duration-500 rounded-lg"></div>
