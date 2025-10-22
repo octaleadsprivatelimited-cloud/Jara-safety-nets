@@ -35,18 +35,24 @@ const Home = () => {
       </section>
 
       {/* Main Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-blue-100 py-20">
+      <section className="relative bg-gradient-to-br from-blue-50 to-blue-100 py-20" style={{
+        backgroundImage: 'url(/images/Hero Home.webp)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+        <div className="absolute inset-0 bg-blue-900/40"></div>
         <div className="absolute inset-0 bg-mesh opacity-20"></div>
         <FloatingElements count={6} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4']} size="small" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <ScrollAnimation animation="fadeInUp" delay={200}>
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
                 Your Reliable Partner for Safety Net Solutions
               </h1>
             </ScrollAnimation>
             <ScrollAnimation animation="fadeInUp" delay={400}>
-              <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8">
+              <p className="text-xl text-white/90 max-w-4xl mx-auto mb-8 drop-shadow-md">
                 At JARA Safety Nets, we recognize that peace of mind comes from feeling secure. 
                 Whether it's protecting your home, business, or loved ones, we're committed to 
                 offering customized safety solutions that meet your specific needs.
