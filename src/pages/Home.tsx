@@ -23,12 +23,12 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <ScrollAnimation animation="fadeInUp" delay={200}>
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+              <h1 className="text-4xl md:text-6xl font-bold text-black mb-6 drop-shadow-lg">
                 Your Reliable Partner for Safety Net Solutions
               </h1>
             </ScrollAnimation>
             <ScrollAnimation animation="fadeInUp" delay={400}>
-              <p className="text-xl text-white/90 max-w-4xl mx-auto mb-8 drop-shadow-md">
+              <p className="text-xl text-black max-w-4xl mx-auto mb-8 drop-shadow-md">
                 At JARA Safety Nets, we recognize that peace of mind comes from feeling secure. 
                 Whether it's protecting your home, business, or loved ones, we're committed to 
                 offering customized safety solutions that meet your specific needs.
