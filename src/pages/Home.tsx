@@ -11,12 +11,13 @@ const Home = () => {
     <div className="min-h-screen">
 
       {/* Main Hero Section */}
-      <section className="relative py-20" style={{
-        backgroundImage: 'url(/images/Blog 1.webp)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}>
+      <section 
+        className="relative py-20 bg-cover bg-center bg-no-repeat" 
+        style={{
+          backgroundImage: 'url(/images/Blog%201.webp)',
+          minHeight: '80vh'
+        }}
+      >
         <div className="absolute inset-0 bg-mesh opacity-20"></div>
         <FloatingElements count={6} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4']} size="small" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
