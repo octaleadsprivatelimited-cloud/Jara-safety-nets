@@ -470,7 +470,7 @@ const Services = () => {
                         <p className="text-sm font-semibold text-gray-800">Professional Service</p>
                       </div>
                     </div>
-                    <div className="p-6">
+                    <div className="p-6 relative z-10">
                       <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors duration-300 animate-text-reveal">{service.title}</h3>
                       <p className="text-gray-600 mb-4 animate-fade-in-up">
                         {service.description}
@@ -478,19 +478,18 @@ const Services = () => {
                       <div className="flex space-x-3">
                         <Link
                           to={`/services/${service.slug}`}
-                          className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 hover:scale-105"
+                          className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 hover:scale-105 relative z-20"
                         >
                           Read More →
                         </Link>
                         <Link
                           to="/contact"
-                          className="inline-flex items-center text-green-600 font-semibold hover:text-green-700 transition-all duration-300 hover:scale-105"
+                          className="inline-flex items-center text-green-600 font-semibold hover:text-green-700 transition-all duration-300 hover:scale-105 relative z-20"
                         >
                           Request a Quote →
                         </Link>
                       </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-purple-600/0 group-hover:from-blue-600/5 group-hover:to-purple-600/5 transition-all duration-500 rounded-lg"></div>
                   </div>
                 </ScrollAnimation>
               );
