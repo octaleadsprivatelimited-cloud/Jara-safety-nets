@@ -9,30 +9,6 @@ import CreativeButton from '../components/CreativeButton';
 const Home = () => {
   return (
     <div className="min-h-screen">
-      {/* Contact Info Banner */}
-      <section className="bg-blue-600 text-white py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8">
-              <div className="flex items-center">
-                <Phone className="w-4 h-4 mr-2" />
-                <span className="text-sm">+91 8074616049</span>
-              </div>
-              <div className="flex items-center">
-                <MapPin className="w-4 h-4 mr-2" />
-                <span className="text-sm">Hyderabad, Telangana</span>
-              </div>
-              <div className="flex items-center">
-                <Mail className="w-4 h-4 mr-2" />
-                <span className="text-sm">philipraju1999@gmail.com</span>
-              </div>
-            </div>
-            <div className="mt-2 md:mt-0">
-              <span className="text-sm font-semibold">FREE INSTALLATION & FREE INSPECTION</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Main Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 to-blue-100 py-20" style={{
@@ -416,8 +392,8 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <CreativeButton variant="glow" size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                <Phone className="mr-2 w-5 h-5" />
-                Call Now: +91 8074616049
+                <Phone className="mr-2 w-5 h-5 text-blue-600" />
+                <span className="text-blue-600">Call Now: +91 8074616049</span>
               </CreativeButton>
               <CreativeButton variant="gradient" size="lg" className="bg-green-600 hover:bg-green-700">
                 <Shield className="mr-2 w-5 h-5" />
