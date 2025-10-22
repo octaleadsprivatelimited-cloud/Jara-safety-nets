@@ -282,7 +282,7 @@ const Home = () => {
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <div className="h-48 relative overflow-hidden">
                   <img
-                    src="/images/Children Safety Nets.avif"
+                    src="/images/Balcony Safety Nets.webp"
                     alt="Pets Safety Nets"
                     className="w-full h-full object-cover"
                   />
