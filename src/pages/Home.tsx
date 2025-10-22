@@ -36,10 +36,10 @@ const Home = () => {
 
       {/* Main Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 to-blue-100 py-20" style={{
-        backgroundImage: 'url(/images/Hero Home.webp)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundImage: 'url(/images/Blog 1.webp), url(/images/Blog 2.avif)',
+        backgroundSize: 'cover, cover',
+        backgroundPosition: 'center, center',
+        backgroundRepeat: 'no-repeat, no-repeat'
       }}>
         <div className="absolute inset-0 bg-blue-900/40"></div>
         <div className="absolute inset-0 bg-mesh opacity-20"></div>
