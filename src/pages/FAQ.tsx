@@ -76,6 +76,9 @@ const FAQ = () => {
         </div>
       </div>
 
+      {/* Spacer */}
+      <div className="py-8"></div>
+
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-4 relative overflow-hidden">
