@@ -44,10 +44,10 @@ const Blog = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Hero Section */}
-        <div className="text-center mb-16 relative overflow-hidden">
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <div className="text-center py-20 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-purple-50/30"></div>
           <div className="absolute inset-0 bg-mesh opacity-20"></div>
           <FloatingElements count={6} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4']} size="small" />
@@ -70,7 +70,10 @@ const Blog = () => {
             </ScrollAnimation>
           </div>
         </div>
+      </div>
 
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Sidebar */}
           <div className="lg:col-span-1">
