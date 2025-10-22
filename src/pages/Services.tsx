@@ -164,59 +164,20 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Hero Section */}
-        <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white rounded-3xl p-8 md:p-12 mb-16 relative overflow-hidden animate-gradient-shift">
-          <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent"></div>
-          <div className="absolute inset-0 bg-mesh opacity-20"></div>
-          <FloatingElements count={6} colors={['#ffffff', '#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6']} size="small" />
-          <ParallaxElement speed={0.3} direction="up">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32 animate-liquid-morph"></div>
-          </ParallaxElement>
-          <ParallaxElement speed={0.4} direction="down">
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24 animate-morphing"></div>
-          </ParallaxElement>
-          <div className="relative">
-            <ScrollAnimation animation="fadeInUp" delay={200}>
-              <div className="text-center mb-12">
-              <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-                <CheckCircle className="w-5 h-5 mr-2" />
-                <span className="text-sm font-medium">Professional Installation</span>
-              </div>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Our Premium Services
-              </h1>
-              <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-                Professional safety net solutions for all your needs. From balcony safety to bird protection, 
-                we provide comprehensive netting services with expert installation.
-              </p>
-              </div>
-            </ScrollAnimation>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {serviceImages.map((service, index) => (
-                <ScrollAnimation key={index} animation="fadeInUp" delay={300 + index * 200}>
-                  <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-500 hover:scale-105 hover:-translate-y-2 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-20 h-20 bg-white/5 rounded-full -translate-y-10 translate-x-10 animate-pulse-glow"></div>
-                    <div className="relative overflow-hidden rounded-xl mb-4">
-                      <img 
-                        src={service.image} 
-                        alt={service.description}
-                        className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:from-black/70 transition-all duration-500"></div>
-                      <div className="absolute bottom-2 right-2 bg-white/90 backdrop-blur-sm rounded-full p-2 group-hover:scale-110 transition-transform duration-300">
-                        <CheckCircle className="w-4 h-4 text-blue-600" />
-                      </div>
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-200 transition-colors duration-300 animate-text-reveal">{service.title}</h3>
-                    <p className="text-blue-100 text-sm animate-fade-in-up">{service.description}</p>
-                  </div>
-                </ScrollAnimation>
-              ))}
-            </div>
-          </div>
+    <div className="min-h-screen">
+      {/* Full-width Hero Banner */}
+      <div className="relative w-full">
+        <div
+          className="h-48 md:h-64 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/images/Hero Home.webp)' }}
+        ></div>
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-white">Our Services</h1>
         </div>
+      </div>
+      <div className="py-8"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Service Categories */}
         <div className="mb-16 relative overflow-hidden">

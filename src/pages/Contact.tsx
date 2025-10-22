@@ -105,66 +105,21 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-purple-50/30"></div>
-      <FloatingElements count={6} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4']} size="small" />
-      <ParallaxElement speed={0.3} direction="up">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-200/20 rounded-full animate-pulse-glow"></div>
-      </ParallaxElement>
-      <ParallaxElement speed={0.4} direction="down">
-        <div className="absolute top-40 right-20 w-24 h-24 bg-purple-200/20 rounded-full animate-wave"></div>
-      </ParallaxElement>
-      <ParallaxElement speed={0.2} direction="up">
-        <div className="absolute bottom-20 left-1/4 w-20 h-20 bg-green-200/20 rounded-full animate-morphing"></div>
-      </ParallaxElement>
+    <div className="min-h-screen">
+      {/* Full-width Hero Banner */}
+      <div className="relative w-full">
+        <div
+          className="h-48 md:h-64 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/images/Hero Home.webp)' }}
+        ></div>
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-white">Contact Us</h1>
+        </div>
+      </div>
+      <div className="py-8"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* Hero Section */}
-        <div className="text-center mb-16 relative">
-          <ScrollAnimation animation="fadeInUp" delay={200}>
-            <div className="inline-flex items-center bg-blue-100/50 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-              <MessageCircle className="w-5 h-5 mr-2 text-blue-600" />
-              <span className="text-sm font-medium text-blue-800">Get in Touch</span>
-            </div>
-          </ScrollAnimation>
-          <ScrollAnimation animation="fadeInUp" delay={400}>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gradient animate-text-reveal">
-              Contact Us
-            </h1>
-          </ScrollAnimation>
-          <ScrollAnimation animation="fadeInUp" delay={600}>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up">
-              Get in touch for a free quote or any questions about our safety net solutions
-            </p>
-          </ScrollAnimation>
-          
-          {/* Animated Stats */}
-          <ScrollAnimation animation="scaleIn" delay={800}>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
-              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:scale-105">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
-                  <Users className="w-6 h-6 text-blue-600" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2 animate-text-reveal">500+</h3>
-                <p className="text-gray-600 animate-fade-in-up">Happy Customers</p>
-              </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:scale-105">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 animate-wave">
-                  <Shield className="w-6 h-6 text-green-600" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2 animate-text-reveal">12+</h3>
-                <p className="text-gray-600 animate-fade-in-up">Years Experience</p>
-              </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:scale-105">
-                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 animate-rotate3d">
-                  <Star className="w-6 h-6 text-yellow-600" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2 animate-text-reveal">24/7</h3>
-                <p className="text-gray-600 animate-fade-in-up">Support Available</p>
-              </div>
-            </div>
-          </ScrollAnimation>
-        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}

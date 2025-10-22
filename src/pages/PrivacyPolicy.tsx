@@ -2,12 +2,22 @@ import React from 'react';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen py-20">
+    <div className="min-h-screen">
+      {/* Full-width Hero Banner */}
+      <div className="relative w-full">
+        <div
+          className="h-48 md:h-64 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/images/Hero Home.webp)' }}
+        ></div>
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-white">Privacy Policy</h1>
+        </div>
+      </div>
+      <div className="py-8"></div>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Privacy Policy
-          </h1>
           <p className="text-xl text-gray-600">
             Last updated: {new Date().toLocaleDateString()}
           </p>

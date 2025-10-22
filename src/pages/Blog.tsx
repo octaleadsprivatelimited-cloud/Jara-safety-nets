@@ -45,34 +45,17 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <div className="text-center py-20 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-purple-50/30"></div>
-          <div className="absolute inset-0 bg-mesh opacity-20"></div>
-          <FloatingElements count={6} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4']} size="small" />
-          <ParallaxElement speed={0.3} direction="up">
-            <div className="absolute top-10 left-10 w-20 h-20 bg-blue-600/10 rounded-full animate-pulse-glow"></div>
-          </ParallaxElement>
-          <ParallaxElement speed={0.4} direction="down">
-            <div className="absolute bottom-10 right-10 w-16 h-16 bg-green-600/10 rounded-full animate-wave"></div>
-          </ParallaxElement>
-          <div className="relative">
-            <ScrollAnimation animation="fadeInUp" delay={200}>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-gradient animate-text-reveal">
-                Our Blog
-              </h1>
-            </ScrollAnimation>
-            <ScrollAnimation animation="fadeInUp" delay={400}>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up">
-                Stay informed about safety solutions, installation tips, and industry insights from our expert team
-              </p>
-            </ScrollAnimation>
-          </div>
+      {/* Full-width Hero Banner */}
+      <div className="relative w-full">
+        <div
+          className="h-48 md:h-64 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/images/Hero Home.webp)' }}
+        ></div>
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-white">Our Blog</h1>
         </div>
       </div>
-
-      {/* Spacer */}
       <div className="py-8"></div>
 
       {/* Main Content */}
