@@ -14,7 +14,7 @@ const Home = () => {
       <section 
         className="relative py-20 bg-cover bg-center bg-no-repeat" 
         style={{
-          backgroundImage: 'url(/images/Blog%201.webp)',
+          backgroundImage: 'url(/images/balcony-safety-nets.webp)',
           minHeight: '80vh'
         }}
       >
