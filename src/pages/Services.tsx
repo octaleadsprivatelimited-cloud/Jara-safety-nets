@@ -480,13 +480,13 @@ const Services = () => {
                           to={`/services/${service.slug}`}
                           className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 hover:scale-105"
                         >
-                          Learn More →
+                          Read More →
                         </Link>
                         <Link
                           to="/contact"
                           className="inline-flex items-center text-green-600 font-semibold hover:text-green-700 transition-all duration-300 hover:scale-105"
                         >
-                          Request Quote →
+                          Request a Quote →
                         </Link>
                       </div>
                     </div>
