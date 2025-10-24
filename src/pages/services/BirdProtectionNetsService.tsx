@@ -39,17 +39,14 @@ const BirdProtectionNetsService = () => {
     {
       name: "Pigeon Nets",
       description: "Specialized nets to prevent pigeons from roosting and nesting on your property",
-      price: "₹30-80/sq ft"
     },
     {
       name: "Bird Spikes", 
       description: "Physical deterrents to prevent birds from landing on ledges and surfaces",
-      price: "₹15-25/linear ft"
     },
     {
       name: "Bird Netting",
       description: "Comprehensive netting solutions for large areas and complex structures",
-      price: "₹40-100/sq ft"
     }
   ];
 
@@ -98,9 +95,6 @@ const BirdProtectionNetsService = () => {
               <img 
 
                 src="/images/Bird Protection Nets.webp" 
-
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop" 
-
                 alt="Bird Protection Nets"
                 className="w-full h-80 object-cover rounded-xl shadow-2xl"
               />
@@ -146,7 +140,6 @@ const BirdProtectionNetsService = () => {
               <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{type.name}</h3>
                 <p className="text-gray-600 mb-4">{type.description}</p>
-                <div className="text-2xl font-bold text-green-600 mb-4">{type.price}</div>
                 <a 
                   href="tel:+918074616049"
                   className="w-full bg-green-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-green-700 transition-colors inline-block text-center"

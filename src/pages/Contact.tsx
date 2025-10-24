@@ -112,7 +112,7 @@ const Contact = () => {
           className="h-48 md:h-64 bg-cover bg-center"
           style={{ backgroundImage: 'url(/images/Hero Home.webp)' }}
         ></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/90 to-orange-700/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white">Contact Us</h1>
         </div>
@@ -268,20 +268,20 @@ const Contact = () => {
                         <CreativeButton
                           type="submit"
                           variant="gradient"
-                          size="lg"
+                          size="md"
                           disabled={isSubmitting}
                           className="w-full"
                         >
                           {isSubmitting ? (
-                            <>
+                            <div className="flex items-center justify-center">
                               <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
                               Sending...
-                            </>
+                            </div>
                           ) : (
-                            <>
+                            <div className="flex items-center justify-center">
                               <Send className="mr-2 w-5 h-5" />
                               Send Message
-                            </>
+                            </div>
                           )}
                         </CreativeButton>
                       </ScrollAnimation>
@@ -318,10 +318,12 @@ const Contact = () => {
                       href="tel:+918074616049"
                       variant="glow"
                       size="lg"
-                      className="inline-flex items-center"
+                      className="inline-flex items-center justify-center"
                     >
-                      <Phone className="mr-2 w-5 h-5" />
-                      Call Emergency Line
+                      <div className="flex items-center">
+                        <Phone className="mr-2 w-5 h-5" />
+                        Call Emergency Line
+                      </div>
                     </CreativeButton>
                   </ScrollAnimation>
                 </div>

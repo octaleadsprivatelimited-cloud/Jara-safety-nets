@@ -24,7 +24,7 @@ const BuildingCoveringService = () => {
     'Protects building from weather damage',
     'Prevents dust and debris accumulation',
     'Maintains construction schedule',
-    'Reduces maintenance costs',
+    'Reduces maintenance requirements',
     'Customizable for different building sizes',
     'Professional installation with warranty'
   ];

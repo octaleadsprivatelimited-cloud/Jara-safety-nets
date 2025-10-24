@@ -73,13 +73,13 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6 text-gradient animate-text-reveal">About JARA Safety Nets</h2>
               <p className="text-gray-600 mb-4 animate-fade-in-up">
-                JARA Safety Nets is owned and operated by Philip Raju (Prop.), a leading manufacturer and supplier of quality netting with installation & warranty. We specialize in complete safety & bird proofing solutions by installation of nets, cost effective and customizable.
+                JARA Safety Nets is owned and operated by Philip Raju (Prop.), a leading manufacturer and supplier of quality netting with installation & warranty. We specialize in complete safety & bird proofing solutions by installation of nets, effective and customizable.
               </p>
               <p className="text-gray-600 mb-4 animate-fade-in-up">
                 Our team with 12+ years of experience is expert in installation of quality pigeon netting and safety nets. We are the best choice for your safety nets services, offering free installation and free inspection for all our services.
               </p>
               <p className="text-gray-600 mb-4 animate-fade-in-up">
-                We offer best quality nets & competitive price. Our team was trained in fixing and installation of nets in apartments, industries and all sports nets. We install nets by following all safety norms by wearing safety rope along with all required safety equipments.
+                We offer best quality nets & excellent value. Our team was trained in fixing and installation of nets in apartments, industries and all sports nets. We install nets by following all safety norms by wearing safety rope along with all required safety equipments.
               </p>
               <p className="text-gray-600 animate-fade-in-up">
                 Based in Hyderabad, Telangana, we serve customers across the region with dedication and professionalism. Our mission is to protect every space with safety and strength, ensuring peace of mind for families and communities.

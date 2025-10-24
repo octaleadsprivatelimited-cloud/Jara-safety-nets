@@ -36,7 +36,7 @@ const Testimonials = () => {
       role: 'Safety Officer',
       company: 'SecureBuild Pvt Ltd',
       rating: 5,
-      text: "Top-notch safety solutions with competitive pricing. The installation team is well-trained and follows all safety protocols. Highly satisfied with their services."
+      text: "Top-notch safety solutions with excellent quality. The installation team is well-trained and follows all safety protocols. Highly satisfied with their services."
     },
     {
       name: 'Meera Joshi',
@@ -55,7 +55,7 @@ const Testimonials = () => {
           className="h-48 md:h-64 bg-cover bg-center"
           style={{ backgroundImage: 'url(/images/Hero Home.webp)' }}
         ></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/90 to-orange-700/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white">Client Testimonials</h1>
         </div>

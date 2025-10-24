@@ -169,11 +169,14 @@ const Services = () => {
       <div className="relative w-full">
         <div
           className="h-48 md:h-64 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/Hero Home.webp)' }}
+          style={{ backgroundImage: 'url(/images/Bird Protection Nets.webp)' }}
         ></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/90 to-orange-700/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-white">Our Services</h1>
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">Our Services</h1>
+            <p className="text-lg md:text-xl text-white/90 drop-shadow-md">Professional Safety Net Solutions</p>
+          </div>
         </div>
       </div>
       <div className="py-8"></div>

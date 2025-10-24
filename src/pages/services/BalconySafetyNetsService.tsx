@@ -101,11 +101,7 @@ const BalconySafetyNetsService = () => {
             </div>
             <div className="relative">
               <img 
-
                 src="/images/Balcony Safety Nets.webp" 
-
-                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop" 
-
                 alt="Balcony Safety Nets"
                 className="w-full h-80 object-cover rounded-xl shadow-2xl"
               />
@@ -281,64 +277,6 @@ const BalconySafetyNetsService = () => {
           </div>
         </div>
 
-        {/* Pricing Section */}
-        <div className="mb-16">
-          <div className="bg-white rounded-xl shadow-professional-lg p-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Pricing Information</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center p-6 border border-gray-200 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Basic Package</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-4">₹50/sq ft</div>
-                <ul className="text-gray-600 space-y-2 mb-6">
-                  <li>• Standard HDPE Net</li>
-                  <li>• 2 Year Warranty</li>
-                  <li>• Professional Installation</li>
-                  <li>• Free Site Visit</li>
-                </ul>
-                <a 
-                  href="tel:+918074616049"
-                  className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block"
-                >
-                  Get Quote
-                </a>
-              </div>
-              <div className="text-center p-6 border-2 border-blue-600 rounded-lg bg-blue-50">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Premium Package</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-4">₹75/sq ft</div>
-                <ul className="text-gray-600 space-y-2 mb-6">
-                  <li>• Premium UV Resistant Net</li>
-                  <li>• 5 Year Warranty</li>
-                  <li>• Professional Installation</li>
-                  <li>• Free Site Visit</li>
-                  <li>• Annual Maintenance</li>
-                </ul>
-                <a 
-                  href="tel:+918074616049"
-                  className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block"
-                >
-                  Get Quote
-                </a>
-              </div>
-              <div className="text-center p-6 border border-gray-200 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Custom Package</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-4">Custom</div>
-                <ul className="text-gray-600 space-y-2 mb-6">
-                  <li>• Custom Design</li>
-                  <li>• Premium Materials</li>
-                  <li>• Extended Warranty</li>
-                  <li>• Priority Support</li>
-                  <li>• Maintenance Included</li>
-                </ul>
-                <a 
-                  href="tel:+918074616049"
-                  className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block"
-                >
-                  Get Quote
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Testimonials */}
         <div className="mb-16">

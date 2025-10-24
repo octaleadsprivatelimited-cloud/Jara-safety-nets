@@ -39,17 +39,14 @@ const InvisibleGrillsService = () => {
     {
       name: "Balcony Invisible Grills",
       description: "Perfect for balconies, providing security without blocking the view",
-      price: "₹200-300/sq ft"
     },
     {
       name: "Window Invisible Grills", 
       description: "Ideal for windows, maintaining visibility while ensuring safety",
-      price: "₹150-250/sq ft"
     },
     {
       name: "Casement Invisible Grills",
       description: "Specialized grills for casement windows with smooth operation",
-      price: "₹180-280/sq ft"
     }
   ];
 
@@ -98,9 +95,6 @@ const InvisibleGrillsService = () => {
               <img 
 
                 src="/images/All Invisible Grills.webp" 
-
-                src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop" 
-
                 alt="Invisible Grills"
                 className="w-full h-80 object-cover rounded-xl shadow-2xl"
               />
@@ -146,7 +140,6 @@ const InvisibleGrillsService = () => {
               <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{type.name}</h3>
                 <p className="text-gray-600 mb-4">{type.description}</p>
-                <div className="text-2xl font-bold text-green-600 mb-4">{type.price}</div>
                 <a 
                   href="tel:+918074616049"
                   className="w-full bg-green-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-green-700 transition-colors inline-block text-center"
