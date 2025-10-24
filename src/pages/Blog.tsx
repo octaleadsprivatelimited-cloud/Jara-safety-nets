@@ -179,43 +179,43 @@ const Blog = () => {
               ))}
             </div>
           </div>
+        </div>
 
-            {/* Newsletter Signup */}
-            <div className="mt-12 relative overflow-hidden">
-              <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-8 text-center relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 to-blue-800/90"></div>
-                <div className="absolute inset-0 bg-mesh opacity-20"></div>
-                <FloatingElements count={5} colors={['#ffffff', '#3b82f6', '#10b981', '#f59e0b', '#ef4444']} size="small" />
-                <ParallaxElement speed={0.3} direction="up">
-                  <div className="absolute top-10 left-10 w-16 h-16 bg-white/10 rounded-full animate-pulse-glow"></div>
-                </ParallaxElement>
-                <ParallaxElement speed={0.4} direction="down">
-                  <div className="absolute bottom-10 right-10 w-12 h-12 bg-white/5 rounded-full animate-wave"></div>
-                </ParallaxElement>
-                <div className="relative">
-                  <ScrollAnimation animation="fadeInUp" delay={200}>
-                    <h3 className="text-2xl font-bold mb-4 text-gradient animate-text-reveal">Stay Updated</h3>
-                  </ScrollAnimation>
-                  <ScrollAnimation animation="fadeInUp" delay={400}>
-                    <p className="text-blue-100 mb-6 max-w-2xl mx-auto animate-fade-in-up">
-                      Subscribe to our newsletter for the latest safety tips, installation guides, and industry insights.
-                    </p>
-                  </ScrollAnimation>
-                  <ScrollAnimation animation="scaleIn" delay={600}>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-                      <input 
-                        type="email" 
-                        placeholder="Enter your email"
-                        className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white hover:scale-105 transition-transform duration-300"
-                      />
-                      <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
-                        Subscribe
-                      </button>
-                    </div>
-                  </ScrollAnimation>
+        {/* Newsletter Signup - Outside Grid */}
+        <div className="mt-12 relative overflow-hidden">
+          <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-8 text-center relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 to-blue-800/90"></div>
+            <div className="absolute inset-0 bg-mesh opacity-20"></div>
+            <FloatingElements count={5} colors={['#ffffff', '#3b82f6', '#10b981', '#f59e0b', '#ef4444']} size="small" />
+            <ParallaxElement speed={0.3} direction="up">
+              <div className="absolute top-10 left-10 w-16 h-16 bg-white/10 rounded-full animate-pulse-glow"></div>
+            </ParallaxElement>
+            <ParallaxElement speed={0.4} direction="down">
+              <div className="absolute bottom-10 right-10 w-12 h-12 bg-white/5 rounded-full animate-wave"></div>
+            </ParallaxElement>
+            <div className="relative">
+              <ScrollAnimation animation="fadeInUp" delay={200}>
+                <h3 className="text-2xl font-bold mb-4 text-gradient animate-text-reveal">Stay Updated</h3>
+              </ScrollAnimation>
+              <ScrollAnimation animation="fadeInUp" delay={400}>
+                <p className="text-blue-100 mb-6 max-w-2xl mx-auto animate-fade-in-up">
+                  Subscribe to our newsletter for the latest safety tips, installation guides, and industry insights.
+                </p>
+              </ScrollAnimation>
+              <ScrollAnimation animation="scaleIn" delay={600}>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                  <input 
+                    type="email" 
+                    placeholder="Enter your email"
+                    className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white hover:scale-105 transition-transform duration-300"
+                  />
+                  <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+                    Subscribe
+                  </button>
                 </div>
-              </div>
+              </ScrollAnimation>
             </div>
+          </div>
         </div>
       </div>
     </div>
