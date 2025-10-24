@@ -167,12 +167,13 @@ const Blog = () => {
                       <Link 
                         to={`/blog/${post.id}`}
                         className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 hover:scale-105"
+                        style={{ pointerEvents: 'auto', zIndex: 10 }}
                       >
                         Read More
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Link>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-purple-600/0 group-hover:from-blue-600/5 group-hover:to-purple-600/5 transition-all duration-500 rounded-lg"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-purple-600/0 group-hover:from-blue-600/5 group-hover:to-purple-600/5 transition-all duration-500 rounded-lg pointer-events-none"></div>
                   </article>
                 </ScrollAnimation>
               ))}

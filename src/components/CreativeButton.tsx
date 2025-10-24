@@ -47,15 +47,15 @@ const CreativeButton: React.FC<CreativeButtonProps> = ({
     
     switch (variant) {
       case 'primary':
-        return `${baseClasses} bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl`;
+        return `${baseClasses} bg-blue-500 hover:bg-blue-600 text-white shadow-lg hover:shadow-xl`;
       case 'secondary':
-        return `${baseClasses} bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white`;
+        return `${baseClasses} bg-white border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white`;
       case 'gradient':
-        return `${baseClasses} bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl`;
+        return `${baseClasses} bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl`;
       case 'glow':
-        return `${baseClasses} bg-blue-600 text-white shadow-lg hover:shadow-2xl hover:shadow-blue-500/50`;
+        return `${baseClasses} bg-blue-500 text-white shadow-lg hover:shadow-2xl hover:shadow-blue-400/50`;
       case 'magnetic':
-        return `${baseClasses} bg-blue-600 text-white shadow-lg hover:shadow-xl hover:scale-105`;
+        return `${baseClasses} bg-blue-500 text-white shadow-lg hover:shadow-xl hover:scale-105`;
       default:
         return baseClasses;
     }
@@ -64,13 +64,13 @@ const CreativeButton: React.FC<CreativeButtonProps> = ({
   const getSizeClasses = () => {
     switch (size) {
       case 'sm':
-        return 'px-4 py-2 text-sm';
+        return 'px-3 py-2 text-xs sm:px-4 sm:py-2 sm:text-sm';
       case 'md':
-        return 'px-6 py-3 text-base';
+        return 'px-4 py-2 text-sm sm:px-6 sm:py-3 sm:text-base';
       case 'lg':
-        return 'px-8 py-4 text-lg';
+        return 'px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg';
       default:
-        return 'px-6 py-3 text-base';
+        return 'px-4 py-2 text-sm sm:px-6 sm:py-3 sm:text-base';
     }
   };
 
@@ -107,7 +107,7 @@ const CreativeButton: React.FC<CreativeButtonProps> = ({
       
       {/* Glow Effect for glow variant */}
       {variant === 'glow' && isHovered && (
-        <div className="absolute inset-0 bg-blue-400/30 rounded-lg blur-sm -z-10" />
+        <div className="absolute inset-0 bg-blue-300/30 rounded-lg blur-sm -z-10" />
       )}
       
       <span className="relative z-10">{children}</span>

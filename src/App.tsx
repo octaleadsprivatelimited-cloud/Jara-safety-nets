@@ -36,7 +36,7 @@ import BirdSpikesService from './pages/services/BirdSpikesService';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-orange-100">
         <ScrollToTop />
         <Header />
         <main>
