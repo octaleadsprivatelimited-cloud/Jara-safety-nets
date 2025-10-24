@@ -392,12 +392,16 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center max-w-2xl mx-auto">
               <CreativeButton variant="glow" size="sm" className="w-full sm:w-auto bg-white text-blue-600 hover:bg-gray-100">
-                <Phone className="mr-1 w-3 h-3 sm:mr-2 sm:w-4 sm:h-4 text-blue-600" />
-                <span className="text-blue-600 text-xs sm:text-sm">Call Now: +91 8074616049</span>
+                <div className="flex items-center">
+                  <Phone className="mr-1 w-3 h-3 sm:mr-2 sm:w-4 sm:h-4 text-blue-600" />
+                  <span className="text-blue-600 text-xs sm:text-sm">Call Now: +91 8074616049</span>
+                </div>
               </CreativeButton>
               <CreativeButton variant="gradient" size="sm" className="w-full sm:w-auto bg-green-600 hover:bg-green-700">
-                <Shield className="mr-1 w-3 h-3 sm:mr-2 sm:w-4 sm:h-4" />
-                <span className="text-xs sm:text-sm">Get Free Quote</span>
+                <div className="flex items-center">
+                  <Shield className="mr-1 w-3 h-3 sm:mr-2 sm:w-4 sm:h-4" />
+                  <span className="text-xs sm:text-sm">Get Free Quote</span>
+                </div>
               </CreativeButton>
             </div>
           </ScrollAnimation>

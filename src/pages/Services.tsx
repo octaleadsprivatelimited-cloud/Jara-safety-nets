@@ -490,8 +490,10 @@ const Services = () => {
                   className="inline-flex items-center justify-center"
                   onClick={() => window.location.href = 'tel:+918074616049'}
                 >
-                  <Phone className="mr-2 w-5 h-5" />
-                  Call Now: +91 8074616049
+                  <div className="flex items-center">
+                    <Phone className="mr-2 w-5 h-5" />
+                    Call Now: +91 8074616049
+                  </div>
                 </CreativeButton>
                 <CreativeButton
                   variant="glow"
