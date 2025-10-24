@@ -171,7 +171,7 @@ const Services = () => {
           className="h-48 md:h-64 bg-cover bg-center"
           style={{ backgroundImage: 'url(/images/Hero Home.webp)' }}
         ></div>
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/90 to-orange-700/90"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white">Our Services</h1>
         </div>
