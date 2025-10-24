@@ -138,10 +138,25 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <div className="lg:hidden pb-4 border-t border-orange-400">
-              <div className="pt-4 space-y-1">
+      </div>
+    </header>
+
+    {/* Mobile Navigation - Outside Header Container */}
+    {isMenuOpen && (
+      <div className="lg:hidden fixed inset-0 z-50 bg-black bg-opacity-50" onClick={() => setIsMenuOpen(false)}>
+        <div className="fixed top-0 right-0 h-full w-80 max-w-sm bg-orange-500 shadow-2xl" onClick={(e) => e.stopPropagation()}>
+          <div className="flex flex-col h-full">
+            <div className="flex items-center justify-between p-4 border-b border-orange-400">
+              <h3 className="text-lg font-semibold text-white">Menu</h3>
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className="text-white hover:text-yellow-200 p-2 rounded-lg hover:bg-orange-600"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+            <div className="flex-1 overflow-y-auto py-4">
+              <nav className="space-y-1 px-4">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
@@ -156,11 +171,12 @@ const Header = () => {
                     {item.name}
                   </Link>
                 ))}
-              </div>
+              </nav>
             </div>
-          )}
+          </div>
+        </div>
       </div>
-    </header>
+    )}
     </>
   );
 };
