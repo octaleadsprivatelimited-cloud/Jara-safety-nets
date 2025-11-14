@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, User, ArrowRight, Eye, Tag } from 'lucide-react';
 import ScrollAnimation from '../components/ScrollAnimation';
@@ -36,12 +36,22 @@ const Blog = () => {
     }
   ];
 
+  const [selectedCategory, setSelectedCategory] = useState('All Posts');
+
   const categories = [
-    { name: 'All Posts', count: 2, active: true },
-    { name: 'Safety Nets', count: 1, active: false },
-    { name: 'Bird Protection', count: 1, active: false },
-    { name: 'Installation Tips', count: 0, active: false }
+    { name: 'All Posts', count: blogPosts.length, active: selectedCategory === 'All Posts' },
+    { name: 'Safety Nets', count: blogPosts.filter(post => post.category === 'Safety Nets').length, active: selectedCategory === 'Safety Nets' },
+    { name: 'Bird Protection', count: blogPosts.filter(post => post.category === 'Bird Protection').length, active: selectedCategory === 'Bird Protection' },
+    { name: 'Installation Tips', count: blogPosts.filter(post => post.category === 'Installation Tips').length, active: selectedCategory === 'Installation Tips' }
   ];
+
+  const filteredPosts = selectedCategory === 'All Posts' 
+    ? blogPosts 
+    : blogPosts.filter(post => post.category === selectedCategory);
+
+  const handleCategoryClick = (categoryName: string) => {
+    setSelectedCategory(categoryName);
+  };
 
   return (
     <div className="min-h-screen">
@@ -51,7 +61,7 @@ const Blog = () => {
           className="h-48 md:h-64 bg-cover bg-center"
           style={{ backgroundImage: 'url(/images/Hero Home.webp)' }}
         ></div>
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white">Our Blog</h1>
         </div>
@@ -71,11 +81,14 @@ const Blog = () => {
                   {categories.map((category, index) => (
                     <li key={index}>
                       <ScrollAnimation animation="fadeInLeft" delay={400 + index * 100}>
-                        <button className={`w-full text-left px-3 py-2 rounded-lg transition-all duration-300 hover:scale-105 ${
-                          category.active 
-                            ? 'bg-blue-100 text-blue-700 font-medium hover:bg-blue-200' 
-                            : 'text-gray-600 hover:bg-gray-100 hover:text-gray-800'
-                        }`}>
+                        <button 
+                          onClick={() => handleCategoryClick(category.name)}
+                          className={`w-full text-left px-3 py-2 rounded-lg transition-all duration-300 hover:scale-105 ${
+                            category.active 
+                              ? 'bg-blue-100 text-blue-700 font-medium hover:bg-blue-200' 
+                              : 'text-gray-600 hover:bg-gray-100 hover:text-gray-800'
+                          }`}
+                        >
                           {category.name} ({category.count})
                         </button>
                       </ScrollAnimation>
@@ -109,7 +122,7 @@ const Blog = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50/10 to-purple-50/10"></div>
             <FloatingElements count={4} colors={['#3b82f6', '#10b981', '#f59e0b', '#ef4444']} size="small" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {blogPosts.map((post, index) => (
+              {filteredPosts.map((post, index) => (
                 <ScrollAnimation key={index} animation="fadeInUp" delay={300 + index * 200}>
                   <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 relative group">
                     <div className="h-48 relative overflow-hidden">
@@ -179,43 +192,43 @@ const Blog = () => {
               ))}
             </div>
           </div>
+        </div>
 
-            {/* Newsletter Signup */}
-            <div className="mt-12 relative overflow-hidden">
-              <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-8 text-center relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 to-blue-800/90"></div>
-                <div className="absolute inset-0 bg-mesh opacity-20"></div>
-                <FloatingElements count={5} colors={['#ffffff', '#3b82f6', '#10b981', '#f59e0b', '#ef4444']} size="small" />
-                <ParallaxElement speed={0.3} direction="up">
-                  <div className="absolute top-10 left-10 w-16 h-16 bg-white/10 rounded-full animate-pulse-glow"></div>
-                </ParallaxElement>
-                <ParallaxElement speed={0.4} direction="down">
-                  <div className="absolute bottom-10 right-10 w-12 h-12 bg-white/5 rounded-full animate-wave"></div>
-                </ParallaxElement>
-                <div className="relative">
-                  <ScrollAnimation animation="fadeInUp" delay={200}>
-                    <h3 className="text-2xl font-bold mb-4 text-gradient animate-text-reveal">Stay Updated</h3>
-                  </ScrollAnimation>
-                  <ScrollAnimation animation="fadeInUp" delay={400}>
-                    <p className="text-blue-100 mb-6 max-w-2xl mx-auto animate-fade-in-up">
-                      Subscribe to our newsletter for the latest safety tips, installation guides, and industry insights.
-                    </p>
-                  </ScrollAnimation>
-                  <ScrollAnimation animation="scaleIn" delay={600}>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-                      <input 
-                        type="email" 
-                        placeholder="Enter your email"
-                        className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white hover:scale-105 transition-transform duration-300"
-                      />
-                      <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
-                        Subscribe
-                      </button>
-                    </div>
-                  </ScrollAnimation>
+        {/* Newsletter Signup - Outside Grid */}
+        <div className="mt-12 relative overflow-hidden">
+          <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-8 text-center relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 to-blue-800/90"></div>
+            <div className="absolute inset-0 bg-mesh opacity-20"></div>
+            <FloatingElements count={5} colors={['#ffffff', '#3b82f6', '#10b981', '#f59e0b', '#ef4444']} size="small" />
+            <ParallaxElement speed={0.3} direction="up">
+              <div className="absolute top-10 left-10 w-16 h-16 bg-white/10 rounded-full animate-pulse-glow"></div>
+            </ParallaxElement>
+            <ParallaxElement speed={0.4} direction="down">
+              <div className="absolute bottom-10 right-10 w-12 h-12 bg-white/5 rounded-full animate-wave"></div>
+            </ParallaxElement>
+            <div className="relative">
+              <ScrollAnimation animation="fadeInUp" delay={200}>
+                <h3 className="text-2xl font-bold mb-4 text-gradient animate-text-reveal">Stay Updated</h3>
+              </ScrollAnimation>
+              <ScrollAnimation animation="fadeInUp" delay={400}>
+                <p className="text-blue-100 mb-6 max-w-2xl mx-auto animate-fade-in-up">
+                  Subscribe to our newsletter for the latest safety tips, installation guides, and industry insights.
+                </p>
+              </ScrollAnimation>
+              <ScrollAnimation animation="scaleIn" delay={600}>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                  <input 
+                    type="email" 
+                    placeholder="Enter your email"
+                    className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white hover:scale-105 transition-transform duration-300"
+                  />
+                  <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+                    Subscribe
+                  </button>
                 </div>
-              </div>
+              </ScrollAnimation>
             </div>
+          </div>
         </div>
       </div>
     </div>

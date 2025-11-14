@@ -39,22 +39,18 @@ const SportsNetsService = () => {
     {
       name: "Cricket Nets",
       description: "Practice nets for cricket training with proper dimensions and safety features",
-      price: "₹200-500/sq ft"
     },
     {
       name: "Football Nets", 
       description: "Goal nets and practice nets for football training and matches",
-      price: "₹150-400/sq ft"
     },
     {
       name: "Tennis Nets",
       description: "Court nets and practice nets for tennis training and recreational play",
-      price: "₹300-600/sq ft"
     },
     {
       name: "Multi-Sport Nets",
       description: "Versatile nets suitable for multiple sports activities",
-      price: "₹250-450/sq ft"
     }
   ];
 
@@ -103,9 +99,6 @@ const SportsNetsService = () => {
               <img 
 
                 src="/images/Sports Nets.webp" 
-
-                src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=400&fit=crop" 
-
                 alt="Sports Nets"
                 className="w-full h-80 object-cover rounded-xl shadow-2xl"
               />
@@ -151,7 +144,6 @@ const SportsNetsService = () => {
               <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{sport.name}</h3>
                 <p className="text-gray-600 mb-4">{sport.description}</p>
-                <div className="text-2xl font-bold text-blue-600 mb-4">{sport.price}</div>
                 <a 
                   href="tel:+918074616049"
                   className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block text-center"

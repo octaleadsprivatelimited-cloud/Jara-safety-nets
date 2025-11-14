@@ -14,7 +14,7 @@ const Gallery = () => {
           className="h-48 md:h-64 bg-cover bg-center"
           style={{ backgroundImage: 'url(/images/Hero Home.webp)' }}
         ></div>
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white">Our Gallery</h1>
         </div>
@@ -233,8 +233,10 @@ const Gallery = () => {
                     className="inline-flex items-center justify-center"
                     onClick={() => window.location.href = 'tel:+918074616049'}
                   >
-                    <Phone className="mr-2 w-5 h-5" />
-                    Call Now: +91 8074616049
+                    <div className="flex items-center">
+                      <Phone className="mr-2 w-5 h-5" />
+                      Call Now: +91 8074616049
+                    </div>
                   </CreativeButton>
                   <CreativeButton
                     variant="glow"
