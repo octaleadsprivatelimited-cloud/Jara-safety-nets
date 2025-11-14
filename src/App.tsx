@@ -36,10 +36,10 @@ import BirdSpikesService from './pages/services/BirdSpikesService';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-orange-100">
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-orange-50">
         <ScrollToTop />
         <Header />
-        <main>
+        <main className="relative">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
